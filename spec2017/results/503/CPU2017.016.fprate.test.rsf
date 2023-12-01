@@ -1,0 +1,487 @@
+spec.cpu2017.fw_bios: Nov-2022
+spec.cpu2017.hw_avail: May-2023
+spec.cpu2017.hw_cpu_max_mhz: 2000MHz
+spec.cpu2017.hw_cpu_name: TH1520
+spec.cpu2017.hw_cpu_nominal_mhz: 2000MHz
+spec.cpu2017.hw_disk: 115 GB  add more disk info here
+spec.cpu2017.hw_memory000: 15.370 GB fixme: If using DDR4, the format is:
+spec.cpu2017.hw_memory001: 'N GB (N x N GB nRxn PC4-nnnnX-X)'
+spec.cpu2017.hw_model: Licheepi 4a
+spec.cpu2017.hw_nchips: 1
+spec.cpu2017.hw_ncores: 4
+spec.cpu2017.hw_ncpuorder: --
+spec.cpu2017.hw_nthreadspercore: 1
+spec.cpu2017.hw_ocache: None
+spec.cpu2017.hw_other: None
+spec.cpu2017.hw_pcache: 64 KB I +  64 Kb D on chip per core
+spec.cpu2017.hw_scache: 1MB L2 Cache for all core
+spec.cpu2017.hw_tcache: None
+spec.cpu2017.hw_vendor: sipeed
+spec.cpu2017.license_num: 0
+spec.cpu2017.prepared_by: sipeed  (is never output, only tags rawfile)
+spec.cpu2017.sw_avail: Nov-2023
+spec.cpu2017.sw_base_ptrsize: 64-bit
+spec.cpu2017.sw_compiler: Debian clang version 17.0.0 (+rc4-1~exp5revyos1)
+spec.cpu2017.sw_file: ext4
+spec.cpu2017.sw_os000: Debian GNU/Linux 12 (bookworm)
+spec.cpu2017.sw_os001: 5.10.113+
+spec.cpu2017.sw_other: None
+spec.cpu2017.sw_peak_ptrsize: 64-bit
+spec.cpu2017.sw_state: Run level 5 (add definition here)
+spec.cpu2017.test_date: Nov-2023
+spec.cpu2017.test_sponsor: PLCT
+spec.cpu2017.tester: PLCT
+spec.cpu2017.notes_000: Environment variables set by runcpu before the start of the run:
+spec.cpu2017.notes_005: LD_LIBRARY_PATH = "/usr/lib64/:/usr/lib/:/lib64"
+spec.cpu2017.notes_010: 
+# =============== do not edit below this point ===================
+spec.cpu2017.rawhash: 1a3491be4dccbb7f79bb79b92906619b42fdf9375de6679d94735403d6f58ac5
+spec.cpu2017.exthash000: &8AAAGY5CWmgxMUFZJlNZzym/TgACOd+AQBBEj//rH/d9+r////pgCL59iyHAAAD57O20pUbWACGp
+spec.cpu2017.exthash001: hJmqbSNIyT2SbImmTSBk9T1GIwPVPUyMEU8CGEEiTKmhkyPUGQB6g0aAANDjJkyYjEwAmTBMgBow
+spec.cpu2017.exthash002: jAEMBGqmj1DJoaBoGnqAHommhiNNGgGQAZ6qpJpmkYAjIxGmACAaYIYCMjCSIIamCZMgSbQ1Teqa
+spec.cpu2017.exthash003: GQGgMQANNMEssuXncUwi2gWKFQJFQQRSiKiQLAQhb/sEltw2WrX6KxJJBQECX5uhJe7iW67+H5Wo
+spec.cpu2017.exthash004: SXchJWIc53XmwIkhvMDwL+bzXtIpXdx3f6KxIzUNvNRccZoXjJJ0fQRkIm9DeVGLk1KVWzxrU7vi
+spec.cpu2017.exthash005: 9t0OCFfy4ShO1B3ZJrc6woZZm6TvYYQ2HHiwnZCAafJ0eHHqe4jeQ/6Y0XitfRE8C1Y1v4vZClVK
+spec.cpu2017.exthash006: UaFJtClUeqEj0oYZmSBkMyZmCWFllLS3kzv1vWWzgktuzg827re/Ty9GAICIAiAAAjWl1drDiWYj
+spec.cpu2017.exthash007: z8/SRCGYCgRnKTTeYCjDcgCoIMJOgBhJeh7ptDTHyvOByi+z6usK1IYZmjcAhWg4AqnAwYUCG2WW
+spec.cpu2017.exthash008: ThCWKG6/Fs2Lto1gbMY0hdK1hqGTiAIEbb9/Qm5XF6iohOu+JdSNtT1vc/nedY+6qlIKFOmZ7ZFa
+spec.cpu2017.exthash009: RUc8agBwi7XYwG+UF4MgCu5OI5jrmwY9F0E7Y9zaUjUXKqzzmgBbFYaihtg36xxvUQLoO24XfAfv
+spec.cpu2017.exthash010: uDR0kxQf+fH5xeR2EV3s4HG08QPN2vRPY8c5Vyq0v5jYA/1IGTDF49AdtarFNstPNUpJjS0QLJbv
+spec.cpu2017.exthash011: 3BxeH6B8xF7XjA6ZQdPibb5rLi+0e+9We2L2qwDBuOw2cIz/C6icAI0krjBEI9CIkzhw9zW6elbd
+spec.cpu2017.exthash012: eeUeM6jJOR9fNwFYZwUYPEZSsuHQAAaXTWkQnU8xe83NLcwVWfNmk8VuLTt2cYyVs2PqNgOYZECx
+spec.cpu2017.exthash013: PboDPa2AboEmQR5kaCofhhchTNgscJu00BMnHne12iE+3ySzyGtLDe31aaALNiuOGAb6u1tXrtcr
+spec.cpu2017.exthash014: xKtxLYzaSqrL+RZ7QvGg5ffhQ6AABqvnZdYAD7TAaUIySYZn5gmK9xjV7cqtY2vVGRupQOZC2xo/
+spec.cpu2017.exthash015: f8/9IzqMSXOz8dnbvWj9BxOAsvkQa4ZlGGVxKBds1Hxa9FBNJWkR5MNNk2wWRiPf9v/Ir0Eq1SsN
+spec.cpu2017.exthash016: lPai9u0T0sWxJ0o+2ee6jPydvOcBARimzXpotjg76ZQgrRe+wpayJ0IAGItfAIJPahaMFFpN1hBj
+spec.cpu2017.exthash017: HuVIvQZrQiXhsJWqTDQ24Ab3gvu/uWE1e4cQe+x2y6TTKxqwYP6cYB+S4P4d++1e1btNtjZ4Kyss
+spec.cpu2017.exthash018: Y6OSDOMHiWxM4wISDFUks1Dwp13xxXVnWJqtG9BhCAbXweX1VpLwuP79hDYUj0B2KjnYVasjcNql
+spec.cpu2017.exthash019: zEiP5ieyibo+OWwt5udtF4ASDLrjNXgkG3d2yPJVY5aXNdmxOlrGR0OQziIvpKn/v1/Kh2YkCACQ
+spec.cpu2017.exthash020: IAMtxq26q23NH185ENarUm6+XZSHviXs4Ic7rKn5yBX1vOncPWk4fUzLIgcqGYMd5d5ihY0ECAD+
+spec.cpu2017.exthash021: wgRET4abLo0zPGgaXOAAmCAyqmJRLTqkdNO3Qca4iSGu3GsI/dlMWkmQaP54VJSkb4MraKGueatf
+spec.cpu2017.exthash022: NMOZpRNC0Vxv9HUfjSOa5EVlLXoOkzKQq6SdKUKha6XoA6D5QD8XXCCIkD3/p3GhoIR4pTEeZIAY
+spec.cpu2017.exthash023: kP9fEnnlwbN3Wr4cuWtK2iuNkZBVlKWUoZRTI0e+ZqZQnZoyJb5xQ5XtY2HB2G57+nr1EOuui6AQ
+spec.cpu2017.exthash024: RQfbvgF2CIqrJ1bO+7La7bL4WtFpVK8hjXHCl/uj8FZzEAcaHstHg2zO7ft09GzcFV+enhoIrt48
+spec.cpu2017.exthash025: 0yTRZV4nFzkWGRhrFlxlmeAGH+srjqKqi1gKlEz7b0Zj8gLe1IApz2aEo+Wzeuw4OCOb8ODLScxz
+spec.cpu2017.exthash026: qQOKgMxnoXGuOrZy11slCqNix6h5P1Eza4Xe4RFh3JI4gLxHudldHwEX+Bh1DL6k0vs11Ocx7Ni+
+spec.cpu2017.exthash027: AM5Nx9/SG1PF1CCHv3BkOvPu+j7gdWgk1d/gWyWwkOAplOOGGdT76aRr3Qk1thXZPPCLJ5j1hA9b
+spec.cpu2017.exthash028: pSxRgrFEEFkcZW0y6252FwECLi8HoJ7OqBG5FOeG2/CGmAWE54XwI6m0gWzsbAkKL7n1epqm1jQ2
+spec.cpu2017.exthash029: XbKau+G4OxhjYrDzNMIHebe0lIXY8lQyCht6cWqS6JkgCosAFTm8JnvOVvPTpxiOgyYpjq4/GARq
+spec.cpu2017.exthash030: hYiLekTZhEWlbnhfwSnUpUHFp0nOqUB/t+ot5Wr6FO8tO74o0uwbXAMywPU329eCQAruS+OiwHrp
+spec.cpu2017.exthash031: QArDIvtbRrdedYM4d+SzxLDykpJSOukIHdlU/MDDsmJo5drgnrIIFZGS09PxjT/7WtkhmQLoweHw
+spec.cpu2017.exthash032: sPKe9mtY53YtkuBnMyvCqDvWZACZofM30kjoiEyr5/U01sVmSqSD25UCBst+yMKXCvYZioiEiLDL
+spec.cpu2017.exthash033: n7fE6TJ6Dlzm9aQNLViapBWMd6ZXgmKk4t3qdN6DHkg9eicBQNTxVxbgskKsU6jNiQKcxOZQ87Vk
+spec.cpu2017.exthash034: 2TCAOvTfwMDO9xVjjm8TBAGFAAX+wOH8FhDuONDkohmmFMcVDYeV86g5A+jO7XgCk0mZmGGGS7eF
+spec.cpu2017.exthash035: QIDkXIQYGo9wwd7JN1CwxYauyshWMQAFc8ZuTuPNU0Db65xI3C5lYoLdN+qtC8wHJWAyuxAFqChC
+spec.cpu2017.exthash036: 5CFlduk6jCctuJjfZJ6b7bBXJAGnt/DDskAZzvXJ65bsajAO/CyBeYswvgcAxfTVm6dmn3F3JFOF
+spec.cpu2017.exthash037: CQzym/Tg
+spec.cpu2017.base_copies: 4
+spec.cpu2017.base_threads: --
+spec.cpu2017.baseenergymean: --
+spec.cpu2017.basemean: 0
+spec.cpu2017.basepeak: 0
+spec.cpu2017.cfidx000: &8AAACmdCWmgxMUFZJlNZYySTqwACoBuAAAR/8AAAv+/f8EADEGrsMwAYZGBNMCZDE0YDVPAPVKk/
+spec.cpu2017.cfidx001: UjQAaaGgRP9UpPap6U/1UAAGgAJFNAgNEao0NNGm2qZUycnQiNnlVQ2ERm6ZmAAAAAAAAAAAAAAA
+spec.cpu2017.cfidx002: AAAAAAAAEiy7tGNcOYAYC3fZ/fR/tEQt3e4S2unREJ3dO7pmUXdxd2nd0zJmUXd3ffffYAAAAAAA
+spec.cpu2017.cfidx003: AAb1rEbu7tXmmcUzPIqlxomZiZmJmY2qq4RSDqhKKxXHhd3fFMZrUZ1fhdLpVVVK6pMtq2yuc5mO
+spec.cpu2017.cfidx004: q1RvOVS64yZld3WcwWlMQmcRmmqzq7zeq3jE73zZzEBGAQ2IpSlKUENiGxDYiZEZ55555xXIRGXO
+spec.cpu2017.cfidx005: VSSZkmZMqqqlKZmZ5zecAAAAAAAAADRszMzMy2AnpTMzKUu4AYY7hPSaZmJSp3ALDHcFKh3d06mJ
+spec.cpu2017.cfidx006: mUnpogAwMdwlMm6mZ5Kpmb4r0S/HkvdP+UQopkl9YAAAAAAAAAAAAcp6O6ttp99qR8bgwhA/Qe7B
+spec.cpu2017.cfidx007: s+mbdyhjebSqJIJbR6GxJAz+B70y7JYO/mgkgy/1z2artTnv6DS34lJbKfUWdJ/k1v2GNdie8paq
+spec.cpu2017.cfidx008: xz4ne+RlOEgRjf5wJIPXGgWG4QGxrQ86z4EkFusczV+OjmNNBJBM269jzZhDuSKwokJIJVQCInBc
+spec.cpu2017.cfidx009: SQPEePF9OcYoXMi10AiRoytJCSCWtYLKujbT432jG5JEVDwxJBlveX7EkHg2pzSzffCCBJBnzoJI
+spec.cpu2017.cfidx010: HEpbIBFBmXMborOsi3MHlyBtJjbbbJ4OpiSCZwf8XckU4UJBjJJOrA==
+spec.cpu2017.errors000: Complete set of valid runs for peak rate unavailable (508.namd_r missing)
+spec.cpu2017.errors001: Complete set of valid runs for peak rate unavailable (519.lbm_r missing)
+spec.cpu2017.errors002: Complete set of valid runs for peak rate unavailable (510.parest_r missing)
+spec.cpu2017.errors003: Complete set of valid runs for peak rate unavailable (554.roms_r missing)
+spec.cpu2017.errors004: Complete set of valid runs for peak rate unavailable (527.cam4_r missing)
+spec.cpu2017.errors005: Complete set of valid runs for peak rate unavailable (538.imagick_r missing)
+spec.cpu2017.errors006: Complete set of valid runs for peak rate unavailable (521.wrf_r missing)
+spec.cpu2017.errors007: Complete set of valid runs for peak rate unavailable (549.fotonik3d_r missing)
+spec.cpu2017.errors008: Complete set of valid runs for peak rate unavailable (544.nab_r missing)
+spec.cpu2017.errors009: Complete set of valid runs for peak rate unavailable (526.blender_r missing)
+spec.cpu2017.errors010: Complete set of valid runs for peak rate unavailable (511.povray_r missing)
+spec.cpu2017.errors011: Complete set of valid runs for peak rate unavailable (503.bwaves_r missing)
+spec.cpu2017.errors012: Complete set of valid runs for peak rate unavailable (507.cactuBSSN_r missing)
+spec.cpu2017.errors013: There is no set of valid runs with the same number of copies for base
+spec.cpu2017.errors014: 'reportable' flag not set during run
+spec.cpu2017.errors015: 508.namd_r (base) did not have enough runs!
+spec.cpu2017.errors016: 519.lbm_r (base) did not have enough runs!
+spec.cpu2017.errors017: 510.parest_r (base) did not have enough runs!
+spec.cpu2017.errors018: 554.roms_r (base) did not have enough runs!
+spec.cpu2017.errors019: 527.cam4_r (base) did not have enough runs!
+spec.cpu2017.errors020: 538.imagick_r (base) did not have enough runs!
+spec.cpu2017.errors021: 521.wrf_r (base) did not have enough runs!
+spec.cpu2017.errors022: 549.fotonik3d_r (base) did not have enough runs!
+spec.cpu2017.errors023: 544.nab_r (base) did not have enough runs!
+spec.cpu2017.errors024: 526.blender_r (base) did not have enough runs!
+spec.cpu2017.errors025: 511.povray_r (base) did not have enough runs!
+spec.cpu2017.errors026: 503.bwaves_r (base) did not have enough runs!
+spec.cpu2017.errors027: 507.cactuBSSN_r (base) did not have enough runs!
+spec.cpu2017.errors028: 503.bwaves_r (base) had invalid runs!
+spec.cpu2017.errors029: 508.namd_r (peak) did not have enough runs!
+spec.cpu2017.errors030: 519.lbm_r (peak) did not have enough runs!
+spec.cpu2017.errors031: 510.parest_r (peak) did not have enough runs!
+spec.cpu2017.errors032: 554.roms_r (peak) did not have enough runs!
+spec.cpu2017.errors033: 527.cam4_r (peak) did not have enough runs!
+spec.cpu2017.errors034: 538.imagick_r (peak) did not have enough runs!
+spec.cpu2017.errors035: 521.wrf_r (peak) did not have enough runs!
+spec.cpu2017.errors036: 549.fotonik3d_r (peak) did not have enough runs!
+spec.cpu2017.errors037: 544.nab_r (peak) did not have enough runs!
+spec.cpu2017.errors038: 526.blender_r (peak) did not have enough runs!
+spec.cpu2017.errors039: 511.povray_r (peak) did not have enough runs!
+spec.cpu2017.errors040: 503.bwaves_r (peak) did not have enough runs!
+spec.cpu2017.errors041: 507.cactuBSSN_r (peak) did not have enough runs!
+spec.cpu2017.errors042: 503.bwaves_r (peak) had invalid runs!
+spec.cpu2017.errors043: Input set must be 'refrate' for a valid run (set to 'test' for this run)
+spec.cpu2017.errors044: Run of 503.bwaves_r (base) was not valid; status is RE
+spec.cpu2017.errors045: Run of 503.bwaves_r (peak) was not valid; status is RE
+# This result was formatted with the flags file mentioned on the following
+# line. Please do NOT attempt to apply a new flags file by changing it;
+# to load new flag definitions, you need to use "rawformat --flagsurl".
+spec.cpu2017.flagsurl000: /home/sipeed/spec2017/config/flags/clang.xml
+spec.cpu2017.invalid: 1
+spec.cpu2017.label: clang17-riscv64-64
+spec.cpu2017.lognum: 016.0
+spec.cpu2017.max_peak_threads: --
+spec.cpu2017.max_threads: --
+spec.cpu2017.mean_anyway: 0
+spec.cpu2017.metric: CFP2017
+spec.cpu2017.min_peak_threads: --
+spec.cpu2017.name: fprate
+spec.cpu2017.peakenergymean: --
+spec.cpu2017.peakmean: 0
+spec.cpu2017.power: 0
+spec.cpu2017.rawconfig000: &8AAAYa9CWmgxMUFZJlNZrLaAfgAJA/+Af/+/7f7///q////7v///+2AiHrID5k+qN97vM168sRCQ
+spec.cpu2017.rawconfig001: 03mvq73PuIOvqazt1VTovoB6A1XvsFaAMh9w1XYaGqqqoVRJRRIlVFCvoYLs3uZ0LdXHQDbM+DQQ
+spec.cpu2017.rawconfig002: mQCZAmBoRpPKn5JhTDTUxMJoaMm0TI0ANAPUGjQNNCNBNBTCm1PQST9U09Mo2p5T1NBptQAGgAAa
+spec.cpu2017.rawconfig003: NB5QAADTIIhTTUanlPMqP1T9RB6noCaNpNqNPSANMmjTTQNAAAAAJNKRMiZAjIU9qZJ6TDU09TNJ
+spec.cpu2017.rawconfig004: k9QbUaekDTQaNAZAaZDQA0CRRUZJ7VPTU0xoDJABiejRpAYJtIbKPKZGR6ajaAEAACRIIBMgE0Ew
+spec.cpu2017.rawconfig005: mgTEI0w0ygyaaj1HiJ6nqMTTT1ABoGhpoUQS5WkCModJoSgmANA0kjd5ebLqcH1efWTo/Bn7H0xi
+spec.cpu2017.rawconfig006: dydCPYSGJTr8aFzGpvb7GfUO3QF7f5KKejwJzKQYh1CNcBhIvWUtl249+j/7Vf5aGH/0eQ+p3+Iz
+spec.cpu2017.rawconfig007: roqxrIWK8SMD9HTjj/w27SvHVozZrHl7/fyfdpXkIw8v8DMc3U8FAZ5pb0wWqAv9zvv0NbGV0Kk9
+spec.cpu2017.rawconfig008: Kc7ZgGodJoYb0Yzq/yfz4tzPmj8coeGnErIuk51swr/5NTsSBHzpL5vKsQO2Iho3MLA3PqsoYdOl
+spec.cpu2017.rawconfig009: mfiTpjE5HsM9sqc5i+orj6yqYDeMfjWxoNGixctiB1kCtYN3ei1ygi/TRkk+tsJsYG8Hi0ziHDId
+spec.cpu2017.rawconfig010: Okz1Mx0OY8NxfcjmQyjbd2K28OrdczCpFbRPl2I2mh+7bg2kT0TP4fPY+MbmkHGOkejsXfTbtNU6
+spec.cpu2017.rawconfig011: +BiqLEcseaiEt7SczODJ0iVZUmZWa2pUobNQBsoQLxW6Ugz/U4z9MNS6exguM0Y+o1LmE/S7gwAP
+spec.cpu2017.rawconfig012: xMSSEL0+XczZ5vIG7TP3JysHDB2jhA20Zyu+CvVX0A0wZIsZC/v/zPu8/lyVgixhELi0HUXO2qT5
+spec.cpu2017.rawconfig013: cMC/nfk1ISpQAhjjhrub0UGt6DXX2fKN9ZJ57320VgRrf2G55cdXFOBlUHbScgySKMLgKBhfA5Gz
+spec.cpu2017.rawconfig014: CS5v7sazV0e2z5Gg43hHsOVvMeikn8BEZv0jWQ69x22XWjCQ0srDnPDG1lEKKWeoONEqjGDUXvie
+spec.cpu2017.rawconfig015: aSYsN7JWQRkHzw8vuU1ZziGhNI91hpn4/knb5pypugSl54D4xm0Yxm354FtabFLRp0Wwzsoqb/Yp
+spec.cpu2017.rawconfig016: V9CmWvV5Po5aHXsIXpsNIiBsGmm16n4fGeZa/wl0kPnlHp9XvW+3HZ05BpkoScJwm84XTIRCey/y
+spec.cpu2017.rawconfig017: oU009U9rlIpPC+DLc7It3/BaHIMrdp+GB3iP/d/+FLBhrI5oIJLVKfjnAy1+DnhuEgDivij0XeSI
+spec.cpu2017.rawconfig018: 5x64VQfpDMUDPEiwGFUCRbDINRhizCQ/W59Cul19Wp8c6RBaZ0uAMic2fLzJEmfZJ6rt5JmXY772
+spec.cpu2017.rawconfig019: PbbNR3etu5qOuN6N4E2RBWZRS+toZyvFGlsOcgoMlBrlsTv8w8oOJdTGO/jeHkOhNttMVVFYiqxF
+spec.cpu2017.rawconfig020: ERPX9XaGJkKiWHqnjJTZZEHGMzvnX26Z/UwG3RjGKCPqEbW3KIwuxQEAuVHGmhgyWRd/jws9eqSI
+spec.cpu2017.rawconfig021: UDVqUoGXxFBAEOY8qJDcyqNrSFaoDE5GJAqTwIXF0cbSGDN3DxpvTa9NZMDrz9+gcZj+LX5583+H
+spec.cpu2017.rawconfig022: XTjzQRKMmExrLIvzMrvHZYUCvvMF7jtTsYBGgv1sDBJtrWl6NQCqh44HEG9mRRcMuXAT6/dNg3T6
+spec.cpu2017.rawconfig023: s/FrLKF68Pt9NdTHTQRw6VYg3kO6cpBSND486SNGYjERiVDQQl5e3W3WcDg8UGV5lpQEMTVVT18v
+spec.cpu2017.rawconfig024: b1RObxIjAyARuwsj6jQqiQ/ROxcKyjdu5HAleq4leTM8fjQJ58urbS26gbooLEEEVsGfHpGjuabT
+spec.cpu2017.rawconfig025: HJBiOrItuYnyByUy13IqUrodCpBN3jpcMIU7ePNXgcDkVdtUxvOnQqb9atvqSimluqgYT6B154am
+spec.cpu2017.rawconfig026: UUWXLkJsdCTGcCRlIMzBONp9N9tw+jWD6C+WOY4L5seDjFOHB3GiAEiHqJZxEuUpu6+YoFPBH1ui
+spec.cpu2017.rawconfig027: 7snWQntljKwkFPHFlMEhriPfhwYhaAlntAGukpHNly43hhiamNbWEwfELb27suhXiBXr570aZZhc
+spec.cpu2017.rawconfig028: 9tmCbimzYSAoQr4NLrc6KCAfB0uR1lRaMbHiW4DFTArETQHwysv550SSlawYvLWhh6WPG0dR14bm
+spec.cpu2017.rawconfig029: a3aoMMzx3eiqUi8X7ec5ggGaS17Nqun9PWA106bRz9XsPy/8PBHcHz0Hkzjs6+m0oFuNpcyIyjq4
+spec.cpu2017.rawconfig030: UvW8xKfi8OeluYY91yPhqG069kz5TbSNRvYOqkEoJOHFd3YGQOQvcuIUahSlhdaKo5EqZS/jxG6g
+spec.cpu2017.rawconfig031: Wc1rqbKkTImMI8kdi9UdTgfG2AkQxUc7BPvh+Ns+J4CXtkpR1l702IweE4AMWFiCiPfwVyNoWfG4
+spec.cpu2017.rawconfig032: Og81aVXg7UTHWOtzOEJXVpwu+qdOvSQeCh5nw5ithtlOPoHf3Zy0d7CmG1FY9mc4raN16+Z9OS3I
+spec.cpu2017.rawconfig033: BMc0QdD8lWQrpjhhn7xYXnOWulrC+PIZ3qbCZCTvviKiNKsknET3K0gvYb6yHe6dcs8TW9DlZlg4
+spec.cpu2017.rawconfig034: xLd2JTw0uOS5l9/nbR93frpnmsmXAykktqTmuRinFU6V3AMbSbQtM554ATpFbfgg8hF6wyDKhO4Y
+spec.cpu2017.rawconfig035: C9HfAlzIfPQ7FyxD0rte9BIK8DyPMC1msOg5pfAHeuGlptlpXzeH4g+ZxHDLlcLh75ycueoz3O0K
+spec.cpu2017.rawconfig036: TDidErXqM7UIO1GmyTh4dqVzufdLcPtSe7iatARWqXXO6MRhEQ/GJ90WSQX9wmPisnuskAz/Nc3A
+spec.cpu2017.rawconfig037: z4R+ExVX2ae/ivwD8X26GSognHT9Jg+D4nZCCPtqo96y1LlNSg9JxtL9gdd1JiDJOC8Nf4Sg19OM
+spec.cpu2017.rawconfig038: c4P0B9lJDZ68yaOLYkT42sjNF96ng2SHImBZ7EyIJVZYS2lQaiNGoP91DJW8/E6dXRje19HmN/JF
+spec.cpu2017.rawconfig039: iTzB4XmwHgSe/8csgxl9rS4Db2PWh1TxVC7LEyG5CD8lv7QkNSvJCWUYK4sEvgv5sFjteh+Ue03+
+spec.cpu2017.rawconfig040: vTl1j1T0z4Unu+oYBVdNt0agkDYbQYVqeQJkXIcRoksV+iexHsRcF+0Ub2w9PK9MBYggH5m1z28G
+spec.cpu2017.rawconfig041: sWIGcgaTuyT1Txd2mKPkp5EMkDJT2mQKrCHppLYRhEChJZI+8947fe4fo6v4d1uv4k61bN8ASM+y
+spec.cpu2017.rawconfig042: UHN/X65TA1B7l43P08+EpQtDtmI+xrxppH6GIs/lAfB3aAzClrZBOA3xyeQKCeBQ6A1grT9eob5I
+spec.cpu2017.rawconfig043: NsRbLvitgB1SOMrvoUqvQfqNJ+7jjaKmsOMU7queYS1eSHoNVkO1S18cXC57n8hpFggzcj9kAlaZ
+spec.cpu2017.rawconfig044: 9/3LZ51GsGGJtzBr+r8diWmXk6jUvc8CW6sQKm8IGlmatFoaXiS8sbEWCNplZiJKSLhbDHYrzx/k
+spec.cpu2017.rawconfig045: Z0s9ldD+IANYbRGZ/eniCVflRhUR8GO/ja3+OvkaUmm8xJYB8Xb3/HiV4HiOF+4J1DQNetsOBBEU
+spec.cpu2017.rawconfig046: z5zHVhejX02B8PXVHcGwNWGRRSuxPz5Z/sCe4SW2nt95+P5p0JvhKcBN9nGDf8ibkrg37ytFYWvd
+spec.cpu2017.rawconfig047: 5iIFXk3ve1YCIKGOX9JwIYRAQFsWSMMUyOHp9PqLbiVBjmTKihUSQSkUFGEpIhLqM7qGcSvQdEhW
+spec.cpu2017.rawconfig048: AMzqRUwQVIafX7WAW3sVhzv2SUNU0/KaEjJH4DHuCc9l5eZFxzhs8sJMNcBegNALDeU6uwq5JzC5
+spec.cpu2017.rawconfig049: kMJKFXN5XMp+kt/lX7ViVNkI+DCoABMFCHbDD29XHvROM0F3E7oP52qjEqd4IKzCZvMzmkcwjpgM
+spec.cpu2017.rawconfig050: yBJ1cUbJIPbGO+uMimwahbCqY7zzKSWTD4SkjURWUAQJias3MJykmoOGqQiRDJVtnw0Eejx2eLLV
+spec.cpu2017.rawconfig051: 9mzFtYPErA4iuSg9UVD5WET3R4WW88EX32Smps6fPG8ZWpYa6EHmCoPnxJQAmFSweCReXGg8NfKp
+spec.cpu2017.rawconfig052: Ecg4BYwoV2q5NThIyc47axSJiHRM0IIIOXqGHuHNO2gW8W5NWTxDTGe9WveHl4jDAzY2dzjpdB01
+spec.cpu2017.rawconfig053: BsnT7s84k7BWsrNnVYeWNzuHChVz0zrnnulTKgYfH7dq0tD9zSawVjfJ+kAc+LiC2a6boBfq/JFx
+spec.cpu2017.rawconfig054: Dny+YVxLfeH9mO4ZakmICpDR4XZOgJPZejaVRz3x4DG/yMEpBCkmyJzRggAVsgdVniJepcTpvwSo
+spec.cpu2017.rawconfig055: yrlYCAwJxg608RWWGR6IBXRfWhRWy4GFXPYCSkzhqlWs2eF93Tjlg+Nd5YXWGxDu3K2WPCxPUL4w
+spec.cpu2017.rawconfig056: Y4+GRJA6vWEUFadyU8mTogaMu8H6gI5xgRZ3Ysbl+biLFqOyy7FX8ACp7x93kJ1IrdQMXcu+2h0e
+spec.cpu2017.rawconfig057: cwAM2koDn5dZ8Pbt1YGe0AX7TuLyuJ+gRER/HdHyyCQGmR8Ds1yGYIE93FxGKZJ/otMKXE+8uEAh
+spec.cpu2017.rawconfig058: xVQIZYINEkHFT+8oth3/bweGGEJyc3f+/8h2RWvyQ0S/ZUgDRBG+iKeXPSEsHLNzX1TLaTPJL9n1
+spec.cpu2017.rawconfig059: /VMSzBGiYfvX0B9C+YmbdcgokjExGd8/Bb7hUCMZ0TLQo2b8OsTCwq0Am6GB8upC45zUU2MR9Afd
+spec.cpu2017.rawconfig060: SUzgZrZiwBtECNlAjR0Fq7YOceI7EjHFy/LOaJRlbLysJg96MYl9mMpCD6+rpBUbRQudB/oa857A
+spec.cpu2017.rawconfig061: Sj7UHc+s6HjsBL/qwS4teHXWpvD+Dr/sl5LdXSHwsX3trIRbwKri9nVQPh4wL1nHgpNvqDqYuPYH
+spec.cpu2017.rawconfig062: YIqEPN8UwFw+j5O/62TFQDNgeJi6gaKIB+fYHGuVEM4opLxvxg+cN6tdJ/1m7/dCuQcdivUg1JUo
+spec.cpu2017.rawconfig063: IHNCyQTdwBsa1Ib9BHMzuMgRIJHea9YzwOGk0JhM8AMN8cvifR5BawFZGIgbpQQZfEXwjUzceBQe
+spec.cpu2017.rawconfig064: NhaF3VFeWEtIE65lM6/bRNSFcLAXtoaWPV0avfiLkhlRyYQw5CU5VdoPys3OIhHMHgb+fn7g5GQW
+spec.cpu2017.rawconfig065: HKgJbCRwaNZeWEjXwjlquQrQOEvNU8LEZ83Dp7w8SSMzM6ldklmJaTCX7qB5u3sQFvMY1w44KP08
+spec.cpu2017.rawconfig066: kvgqg+571uSIFaHRt2TDsaT5QLtaC7qO7TlG5g2Cy1oUraz8DUnYhfqSRb0NC4xF9gBs/XAfv969
+spec.cpu2017.rawconfig067: HlR2Fulw+Z3VXGAtT4sGnM5laEB2+StQkcDcQ6T2pIwglXexPQprvgvAJk8R/aEfXmSWrNVttgLZ
+spec.cpu2017.rawconfig068: aQLLWusRwfQwe9ff89J7rbPWphcl+S+blRFoUCDCvZXQ6V4tilxI2yJBHTLYiBnsrXSLVixalI3p
+spec.cpu2017.rawconfig069: IRGEgXtuUpMRrEkF6l9Lcvzmr+pT+YP0NaTpWM55ft2dYF/auzSUZXdrzkcSicSGKB9Y/UMgwIRE
+spec.cpu2017.rawconfig070: AKcdgx6K7h5Gswoig/I+l7fHr6O47QfZYGsUx7jFZBigPSXgdbRYSOiHUjFP2WnvsCaDnUFCOGT8
+spec.cpu2017.rawconfig071: WF5mBYNWfsXOD9WZVPISVp3S8Djvz2tuc7SXecwGNDaKrWoGrhopclJK5BclxJoYxdkBQlDlYTUM
+spec.cpu2017.rawconfig072: mTzjPYWAQmcQayfwzla6oV4rrMl11VPw0d35uiaouV8OoeKQfx1wbTTRYuIZHpdLuhJxcvF3CHNu
+spec.cpu2017.rawconfig073: TXTnOHBUm7tgvjLVYIvZaIGpJiy5gOeM8Pav3TAibJSKCSDegoLQaMU8w2ZggcoJhNC9KBOgjJIR
+spec.cpu2017.rawconfig074: dvGqsrGjMhNzVmkWLwyOQ8Q3xcdGM+6BZTofLwQq/tNd6XyjPpE9Qw+L4uaQFoDBi1I9Ug+ZoPWI
+spec.cpu2017.rawconfig075: 2AoViB4FoUAlQw7wk9kI+oCxLBrYwypzEY+UKJKtdpie+SMB/IyuNSSDE9JQM+7VRbRJSIyQwkHD
+spec.cpu2017.rawconfig076: Z7579EL4O/pvvn4tWiM4DYlICpnB3mxJHE/T9XtX1f3lUvXgVmK+3WHG73pQ5BgjNGt4oVXCJjVI
+spec.cpu2017.rawconfig077: EKNZbWrGpn7Tu8U7RWlRf0xKRz+gIDsYeNqt8IGCzgKjPoaNOrCRZKPW0HRfVBJzCokq4hATRLn2
+spec.cpu2017.rawconfig078: 86EuP1YG6gEChi4wQh7rgL15jOPXvPsuaZltRaCQXbde7lgEQo5Zi0yjIiKwLW4QrIcNmuy5mYa9
+spec.cpu2017.rawconfig079: zpfcyDcq1ljDplBIGYy3HAvbeOq+WcwPlexFRs0s8nWcpGeebiIg1BINVvUBAfv0UCMkFb5cNqJs
+spec.cpu2017.rawconfig080: cNlIU10N+KSk0k09W8M5kAOpOhuU/5sCEv89l8rODVoMJ2SldEMzCmaJUKV6ITHIjxFZyPX5sucB
+spec.cpu2017.rawconfig081: 1JqXkFDCL2BVLUpsBMOExBk7eLu1UClRZKPV5z8RkWIpUBmpCBmVjNlFTlVxkPBe1noLdk7zk1Qt
+spec.cpu2017.rawconfig082: IEKjTkMCAqM6tR2TIiEkLMJQ+U1c5KwmKyFBEjIB8hUMEU4IvdQKqtylLDJ/lyWowJjIPS+JNP28
+spec.cpu2017.rawconfig083: C1QmIdWzvOqtnFBBQpkL0ZbO2cmS0ucGpVQRUvkt6ldJkERFqPt0R6flu1evkl3ClNQqZ6qSmL4o
+spec.cpu2017.rawconfig084: KORum7tCB0hZBkqPM7hoNgfI220IwHZZqwSLLpexDVggOGESK/JKAQlgi8AZ21J1NY+wPzsHSmjL
+spec.cpu2017.rawconfig085: Vy0K1dysZEEqnW1+sZZMmLQmZlZtEjnbtJyLC17FwKHLAqDQJolZUzXPeB4BglKNtmmoKqaNqiBt
+spec.cpu2017.rawconfig086: qHUVwHkd9QckWXzFAI/FssOYBhNbS5azuClyOtoF3F11mvyn39EMbaJ7VnAsvDfhqjHiQBvbpBsL
+spec.cpu2017.rawconfig087: fnrbNYQcQu8FJhiNLE2Fd5LlrUxSHHBegKzQwAmHTFDQKYDzhJTEPMDqMyTSDNM71Rl9WN175ra+
+spec.cpu2017.rawconfig088: 2JySsUNGe5eZrJXVMkk2eBM9l23rCIw5RsbfncY2cG5ykx2QKy1VYkgv5t07q33K03v+JobLCxGD
+spec.cpu2017.rawconfig089: 50iT4NPweg3LXToHvYQ5+LBLQypY6mRRXM5vc/fEmm/nfCqS7EMTTOdDZKWWdTPw4tlYb98/f3/n
+spec.cpu2017.rawconfig090: +Pwez63l6ii8odQfS5pCipoaB/H+BbSczvVQsCV6tHxATPKMPC14neM4AG2NN4tvmPi+vTLgGkk3
+spec.cpu2017.rawconfig091: gQmQUiBMsYmECj5/YobqfoiSTSNpqLtLKYGBnEBEyAWuUChkyFQlaIyD0SSVKE27fJ1c5DiD8wvx
+spec.cpu2017.rawconfig092: K7G8NaI5mZxiFJrQvznVQgoOTbL7Q5Q8JzSbfJrtBRiCMxxhu+ad/qCwTkauKOEqOSBrXCMZkGq5
+spec.cpu2017.rawconfig093: bbEHQ/XMIVQZ7oyEyDay0gxKyVC0xnltQN+VRMi7zYQsoxtpKASpcFPRZUCtoG4SXP933WfmGg/N
+spec.cpu2017.rawconfig094: KD3fD48fIyj5zIovn2qKE6DxD2kx62J4Z4oGEI4udV4eqhzHhs/AfXHOXoKY+rV32RoPsPjLloLX
+spec.cpu2017.rawconfig095: DLIjPy1xSX4yxovFxCZ2zC2uAjgmhbs9TE7t/Gtq2Aa3rAmlJh+pigFEzLINoWdxlQvYuWW4C4B6
+spec.cpu2017.rawconfig096: czk+8JmjLkTHJNNsFQgWqcBbV4MXLEMLgKwCCDDjQze/HhZvxetlyMsLIXCsFKyLOZwqWNGYawzM
+spec.cpu2017.rawconfig097: lA+eGHlvmeFhzAnmxK17hDeHLw5IqKsERYgrBUlwl0JTFMhEtgQ1wXPtzRMWKqkwaGfTAoYy0RxN
+spec.cpu2017.rawconfig098: 9Ucgpn16BJ4uBcvdw51r1V4ZpY11YB0MRwoG8oZhrFq8vEIahlkunO1byrbCnS5OSUEpSTo2FN2e
+spec.cpu2017.rawconfig099: VQpD0TK5y4vNkBNYacTIsPBNBDPkrss2bZsxhtMEZ0tMito5ZaiCgeiIuzsLB8Mhe2KfUtzTCprC
+spec.cpu2017.rawconfig100: GeMWrbd3iSBpXRkjvlmWQbYQ5SIYe8iCSkud2kcMpk2TY5uEHW4xNPrlEbMTsOcg7GtDPGc4dCRs
+spec.cpu2017.rawconfig101: A8aFIrJziSjlA2yKy87XvcqyV5jYEpIuBsGmetgaBMg5cj9c8Hdq2NgxpO2Y9cSReTMdiRDDcKJ2
+spec.cpu2017.rawconfig102: mm9rmcRdv2h22bLa9U5SFgx3Rl7HDNmUWNuWKOEtzClfQRTmMSXh2NSc53OHLQL+IRd4ibAVuo6w
+spec.cpu2017.rawconfig103: mWC0JhdMWIKZ1rQuYpKkpSD+XVTo0vkw02PesggkUkyh4SEsDLNWaBIW06AWjSCxGDSHjlgZM8yZ
+spec.cpu2017.rawconfig104: MTWKRQWhJzyb6dMzl2ZIchzl1z1GRhvSsEUNzq4hTjz72W9N+lXTfjCZOjnSrnmU2NDz3GArVkCs
+spec.cpu2017.rawconfig105: HgMIas9Fb3NsudkFoEiJykWmVDiSCKFHRbzYW9FDP1FxeKwYhUF9UrRDRMoKmEUBo+waCTk1Q7Ad
+spec.cpu2017.rawconfig106: s4aZVgFhWFNKSFNJWwKgFghwT5bYGDZsym/MO2m50AmcgAaJAVijBkFtk2zmREMsBVhRIncKuo/J
+spec.cpu2017.rawconfig107: NSvv5817TBa5tfS663MQuxAI4e0bw5IHKIWZNmCc6ZZK4LTBihUiuAnDJzkdAw3mM6DmlWCEEsUF
+spec.cpu2017.rawconfig108: MBK6glU0Na7c4ZPHA7qz8vlUwDBYp12fVTCPbPUGiUk/E0VaIZVhOjoAShJINZJE5Hf5Q/ht60b5
+spec.cpu2017.rawconfig109: +aS1Ai5gcPH53lECKXiCwbNf3sJJefH0L3XyFS5FdoTMqCN5BhiWBzaZ1QHtNsbG2zbznOg8dCiV
+spec.cpu2017.rawconfig110: kUSUsvWp5SE2c3FASgK30dyuCSsQqrCxGPDkjaRat1oiZvFgQrg2av+KZprVW03mdEQOQZHuyZEE
+spec.cpu2017.rawconfig111: km5DICHB3tQ1XyOzvlcHMqxmNL0IA13s7kgqKhqMGT2h1MWiLENPEuaOb4/T2g7eWsOlpBDfeQSG
+spec.cpu2017.rawconfig112: gIe3odaaz84gpGICkz5u90FeuHOks/A6K1i7tncHW8iPBGsOFAYxdscDuPt3PdJxCCaag1HFKDKa
+spec.cpu2017.rawconfig113: lQEK+ltAQ5IsK5BIHqYQeHBzXiYGr9KhfwuPfQosNuAINTYaHnkkoBgvi+K00FgShukkbvIiMt2y
+spec.cpu2017.rawconfig114: Wl8y5LgJaxJB2wZsHaoNhAapDWQiZpTAqndUvofeXtHIUldzPsk2jNeBGMtnbleaiiNgah9KSVEj
+spec.cpu2017.rawconfig115: RLXgRR2hlxSErUTPJhaChhHRo6tllJeK2KggkUlaLHrSwo4oVwkoDWlZUWiSiLUWjHolh2nCNugT
+spec.cpu2017.rawconfig116: cUoGYGZtyyE2a6GeU8MmCTHet8CN7QIOxu/EUzPTPd+Hihc+XHJxrYXK0WllWtla7cUxi8UMecTi
+spec.cpu2017.rawconfig117: TucuN3Qm5uNlNDAl9vOik7CAttvodWqvudAReTS1eC1HP9uS9KIQABcwIUeVk3MQB8UdbxmdYgy7
+spec.cpu2017.rawconfig118: Z++dsgNRnehQqqQYE2/KYUxIWdI5OWyQN/KddRE72NZxdp6ZNpDdDeMiqKiLJNAcYWjAgYlYTzPQ
+spec.cpu2017.rawconfig119: DWxou+b1kuSN0KgP2jIMcm8XEEj0zBhhshp1RnQ65f0Oqa3o2083VsccHijRTDBQ2Ekq9OWValaz
+spec.cpu2017.rawconfig120: mthlxS85zsoS72YTm+RC5S8RnlSHClPHkuZElFbs4vIMwCqthVZVayDKhnQWNZ2tOVLaYfCFtJ8n
+spec.cpu2017.rawconfig121: RGsmrcouZp1RYNah2CLxGpiM2a2lii3VW3SaJytSS7MKGUQkabbEgRtuUuB4tNC6bwLuOtRtLLDF
+spec.cpu2017.rawconfig122: XXFS3PFxaSsWbGghMLmb7xTrASGiJhAK4aXayV5Ae4XRCQkTJsViL0lQ5wgOglq1WokwxIWBwG4O
+spec.cpu2017.rawconfig123: sSV4XeCYejDg43pSAbH06qF2iRJGeuGyQNpnKcGGWmyQXjnMptQhigsmBSWyD5GbIPDv3t9Vh6Cj
+spec.cpu2017.rawconfig124: BdqelolL2+QkgYDcyGQpw3Aohz1HxtOGHFuDhxCnWqq3Npk1K1hp0qyFu/AqQFAaz2a6vNPYhB4F
+spec.cpu2017.rawconfig125: nEqgDuuMoteyINqVKUcrIGaCZDC6wWWJ1tWribZMKQAHVBCqLPjoyicGm5YPBZWGKxQkZMzBhLBC
+spec.cpu2017.rawconfig126: rVncjWjAqr7VArFsvFJlRnJpZsQ025DUzbO3LCkKUkVmCNrrMmSJlfGTCbK4rK0MaYoBGa5+MLN0
+spec.cpu2017.rawconfig127: vOgsgJJOYg9TBBNeltuAF5WY2Fl6Xf2SZ8ydDM8ugmDoTVm1MYStzHK5LMq0tNpBIst3ckkskBJg
+spec.cpu2017.rawconfig128: LA90/XElaFoASRgTNQlquF/rpURL39YS7LkW7Ga6xK0gaBgbKARsACeRyL8sBa30F8Xgziag2xDS
+spec.cpu2017.rawconfig129: Y0xobGxJhihiSYNEuR+6PLLPYLCoRt8LXqHwyr2oMghU1myosRcRGZ7LJbO2QQJZg40tX9Axb2Iw
+spec.cpu2017.rawconfig130: RAMW8PbTFMDmWlAk9u3AkI2apXN0oPC9paMR4Uj8e4adVYjEcBWViPhojaksXAcrA00AcrS10JJn
+spec.cpu2017.rawconfig131: RYE2xjYoznQPHDtUhQ0N2i3EWrYGD44jGIliN4KoGQBA5bu4Jcg53wT1CpJMsp2WkRCIKoozb5fZ
+spec.cpu2017.rawconfig132: em2pg39OCqy3CKkYwjWMJpoGdECX30Ne6hz0ADpSJMQN+MIHwiFF8C5fz3C7KQflM2J3XTrNNySz
+spec.cpu2017.rawconfig133: tGjTJG4MREAtphARNzptLzZB966AloIlByICdO6BOtXhDWLKYYVaR4QzuuaHA4ywYZDQY04yFRF2
+spec.cpu2017.rawconfig134: mkhDGAeMp9HukpjePTWIhFcEoXWBPkCiEICYRR4f97f+LuSKcKEhWW0A/A==
+spec.cpu2017.rawflags000: @eNrdW/9T20YW//n4K/bcdgLFkoFwacsYMpxDcsxAYWrau17Syaylta2LpNVpJcCZ/PH3eW93JdmY
+spec.cpu2017.rawflags001: BHKZ693RGWKk3bfv6+d9WXf4/DZLxbUqTaLzw95uuNN7frQx/OOLi9HVr5cnYprKmYmVicqkqLBk
+spec.cpu2017.rawflags002: Q+Bn/Ov46uRc9OZVVRwMBjc3N6EpVBTqcjaIq3gQFTXv2wvxV2/jaGNjuEqHnyWpymWmjqJU5rPh
+spec.cpu2017.rawflags003: oPkbhwyrpErV0dnZL+diRK/FSGcFFpRiXCeVEuPLk5EYXf68t7P7nXgJ6uJFS304sNs3hnMlY1WS
+spec.cpu2017.rawflags004: RK9HL46vjl+zAKA/3zviXR2ejJjq0p0m89h+2t4Wm0Yp8Wo04tcvdVmVMt8aDkDBEyuOruZKxDqq
+spec.cpu2017.rawflags005: M5VXkojx4gpPWTgRee4zuRAThbc1TpCVcCSIihTzUk0PWa0GeuWdYZpeZ1azOjKDJI/VbTivsrR3
+spec.cpu2017.rawflags006: 1G7Fz5rFw4E8CoUAa6USiRGSuMgyEi1NciVwGN7kkfoMPlg3MAlROwOxnzwtx9vj9xC3HSYmpRiw
+spec.cpu2017.rawflags007: Vk2NDWWijEhyKBRyeD0LSXLllYJOYlFp0mtt1LRO6Y+SLW+Enja+gmemTivTF5O6IuMsQEvkusKL
+spec.cpu2017.rawflags008: IpVQBBlMl8ksyWW6bM9wlbfh5GikiwUWz6tBmkQqN8QNzJ5J64OTowNSvpATfa0CooTH4LSQM0hj
+spec.cpu2017.rawflags009: 4AhPGgpib2fnu4Ccuc97rBdeKZk9YV+URaFkSXJNZZoKOI+y7lWoMkuMSa5Vx4Q/5wmHdLUg8U9T
+spec.cpu2017.rawflags010: mFsnZvDjaHwsLgqVi7GuS4h75tiG/b2p4DDDQXG08dtvCJqBDx+KyD8GgRhdnF+enp38JILgyAa1
+spec.cpu2017.rawflags011: oIg97LG933ovf1vIav5WyUqVvQ3vnsZgmVtgn5Zqpm6Lw96b8fZgkyl84N9vtt9sb20+P3xjPny9
+spec.cpu2017.rawflags012: Zf18GCcGJloIIMQkxYE7PdhAsMzDJI/SOob11G112Pt6l17xC3UrswI4MCB+BpUeOKTxz8WdH8hM
+spec.cpu2017.rawflags013: Uq15g3d3JWY5vBj8pGF7Y43UlqsuFAE6TvNr/Q4O0YLFqIELbw270r7lSB71xWh7u8++cTH5h4oq
+spec.cpu2017.rawflags014: WDxoN4qbeRLNoS16ACZAv4CTlzpScJZ81ocXlvaDBvhlyXt22j4IQJEzlavSPnBORSSySbqwJ8Kf
+spec.cpu2017.rawflags015: 3mFvCMyFN8X4KIB49sg53DlI1bVKRUa0jKqqxLLNjMR959w3CRzZVLpA3CJqCD9pnRQI4JSP8DFn
+spec.cpu2017.rawflags016: A25jJfp+NoijAwozp7bX2sL4b8JnkmYx/RZ/neOxOxzcEKPpggFkBmGJsaSiF0lWAOQlAKbS7lCO
+spec.cpu2017.rawflags017: N1OR7GQmfKIQRmxZfTvdITo7C+f6hp4kbF6QDltQMw0JQBgbmC2s00bINDl6UVIQMxpY+dStiuqK
+spec.cpu2017.rawflags018: 3J99IKpqQMECCjMZYUJs11srRDqvSp1arwL8lLTCEqDkBM413hCg0CJTY4s0LYCwLzpX6nvjY7k3
+spec.cpu2017.rawflags019: Pnnm1aJIIuZgoWsPpLmyUExaLcEirFzNmZxlz0IvbaAsauCEgEWQAG63pycVA3idW+5bRsMhkLar
+spec.cpu2017.rawflags020: o8uuT0NV0AsrVszBaUpBBd3nzrlJaiKY5AV4MBYCyVX6yMpRqaGfAjyxKb/ymNI8I9lbFpk++73X
+spec.cpu2017.rawflags021: ZBteSPxxUtqQNCEbUNcVnckMNDziQ9XokH5DdVKEidjkOmSrj8/+j+3trX57epi5553Qx3I8wJu7
+spec.cpu2017.rawflags022: r7CZ5XTq6+rPggDbdayQmKskEsdIfgsD7jr6JLRwGGXVZ/XGRiT3B40lBbDeKWXDkNLuxmKlOmn0
+spec.cpu2017.rawflags023: giqPxNqYsiZpp7uUwxF5L6Xcbzxz0jMHwuShNWpBaFHZ4g3WKskZqJiTRtwoeP2S3WJVUcJE9XMz
+spec.cpu2017.rawflags024: V9ax2NVjNgevJ15UHHalxweQLUA1oeijkzxEQvBMm8r7Vou/sszx0iyFleXHOCFVWeryEw4ic3E8
+spec.cpu2017.rawflags025: MRWH0niBWuRWXEE3YvN4fLV1154jEuRVg942PXTwvSuUt52yp4yvrLVSfePgm2MYqkiwxqpo812u
+spec.cpu2017.rawflags026: b3KSgAvz05+2WtnoKBRXCaofBX8GJQTVnDRNW506i7k0a9XpkhCpk9TotIuA4HMZTl3EdUBKljNV
+spec.cpu2017.rawflags027: BdR6JFO4xkrqenzkGfZqCiOf7mzYCJs0OrKmRgM0C8oTNiiAX+y/eSeftLjZJz+3wNy4m2NUE3Lo
+spec.cpu2017.rawflags028: uI4on3DI8pnGQUi6sJrrnH2tk7jFdarQ6OSOP9IrLwtpjtKUTFP/yqqtZe4OqB43cN/xFqCxWbud
+spec.cpu2017.rawflags029: LN24kmWro/JORDgscPs7snYw4bEW043FuvRWBTrjjPUxaWxOY6dVeCAy8uSCKHdNYiXIu4mYsH6B
+spec.cpu2017.rawflags030: UgPulyaTUpZsr04ue7g0iKsQq4H68QK0GM2NXpFoOHBFgq3PuVZdU5fe3t6tTKmq/iLVKVriNfXp
+spec.cpu2017.rawflags031: EkMb3C0c/p4/rh06BuLaBM0jCCq4+jZVSBuymeQWUiIb9VEUlBS41tAp0GqiKjITjBGztJboGMtc
+spec.cpu2017.rawflags032: Tbu0arKw2YysAZAEKBAtry1uvxGQ6D+pKoKtyUCy5IKp8ZiAEmmkuKgu6pyqvGbwsvr+Sa6DJ503
+spec.cpu2017.rawflags033: QCRVDoDgEDeSnZKqu0mlinpRY/Nt4zngXNqWmuo4O59w2XmFf1BLQqDik5fBE7EJB0uhQo7Hqbrh
+spec.cpu2017.rawflags034: 0QL16Df5lgvs39kNqFVdipAXP49P3l5cnvx4ftmNg24fxM+RpSk008PeQhl+shwhw8KDzAk3pWap
+spec.cpu2017.rawflags035: KqQ++/zyTiXYOdxXnW6z28DJweUWb4AJ+rh5Jst3INKz63qCuwxb9vAzcU6gFVw29XCP0Z/bRcaz
+spec.cpu2017.rawflags036: AIaquNJyUGVN3uQxM4f1YyBgpvHOQmBbXOMj0lqWsd/nSw2om4mFFqCKo3ux6WUwnRYB9yYoaA6m
+spec.cpu2017.rawflags037: 0lT3WuA+XV/5AOstETtkYo0yp6nmZBgUaCqrTl0o/Ab67PoeLvlIrilHrAP/RSBjJM/ClROA/2k3
+spec.cpu2017.rawflags038: ZTTKREkD8cjEjdns7E/zQMhUNR9mHqQeHJdnxQEMhJj7wt5JzH/UQwFY9MoeHpKCl9kRrtRytNz+
+spec.cpu2017.rawflags039: xpk0AV7okex/2U+nRVrPkjxoZzw+4RmXTPvdNHufiXz6DRy9wzfj5Qy8PKVqljXjqriUM52r2QyF
+spec.cpu2017.rawflags040: QDu1usfM44QaKi7MYw0TEYxHdeka7LmEf0qvgk5z3/v4sT0yDIcF7Gvtb5NcqqOlrvoFbzqZzZoz
+spec.cpu2017.rawflags041: LFlrPOooSp54EINPjC/4eUKLNbrwdGbTFRYfFDdwYXYCmQZoQOaPRpVX8H+LtR2o6ElxKCZiIKJe
+spec.cpu2017.rawflags042: nyO5RCib5aqW2lCZRjVXv27Dt2JzdxBt9T7NuZsynH1OuDfedSo2eYL63MXpW23MBxu5W/TCHbLW
+spec.cpu2017.rawflags043: 5U5FY3VsHthdfsenXU5Va6GASLqBvFGyjOaK7zp8HQHRVFNL/bcDBX5+vLg6ORC/6ppvbziSqD6M
+spec.cpu2017.rawflags044: /1EbvkZwpmiGGVxocmPCXXCFJLPQdbmqJQu82unrIW6e+uD4qKusrePbUrAhciC6xT0iUVbvLX6s
+spec.cpu2017.rawflags045: okTYiW5W/yyKlsLb3Z8YuiZbDm5S53K/a/xMkPLjtNQZH8/nwiTUbjWqcLyLxleu4FN1ksZMlgaE
+spec.cpu2017.rawflags046: DdZYY5qDNbPijT983aLK6666rKl+Ew0Ecix04U+8dmKu3RaJ28X7cPrDTnuQ7ZGCi6cgmsL8rbpF
+spec.cpu2017.rawflags047: oGk5b9HthnBAD9ex7cZkdw4+cB7Gmn/lNQBN8lWYnavTPAKn+zkKq/j0J46t1pRWtFCcVnYkQ/U9
+spec.cpu2017.rawflags048: UbCZXEykQVuLNiXQ0wAEgom+dUdvqtmBCLJn+5B0r0/NxRTn0MAkRV/V4aqrts3gYmdrK2ys4sby
+spec.cpu2017.rawflags049: G3+4vE/FB2ukv8P//QJ7N4z9uOqON/KY6C90P0oj6QgMEx26GVDlGn4Quu8UGbcP4eX1rVBVRGVh
+spec.cpu2017.rawflags050: qf5ZI5jj8H4z/qgrteyc31quSkUqU5wG/SUcufN1EvND6NSOqk2zNFylQ0O8yr+mRNrqyO+lsK2E
+spec.cpu2017.rawflags051: u7Fv7mU9xQH1ayiZY76K/epp+KdwT6ycsgIBRqVTLqZt89fYAqFN5IXKJiqmi1l6RF421iKpOm6m
+spec.cpu2017.rawflags052: GkdjPdgzPbs3c+A/hzrBc3N0R/IOPrBuRcZ3SAr80Dhl+TKeLNu9dbcz5xSdMhe8rpQ5EEPZvVRv
+spec.cpu2017.rawflags053: r8Ghs5hmotQNhDKLQ8gwuNFlzLXCgIekg72d3aeD3b1Bwy0HjYuEwGNp8M3J3jff73zzw35wfDEa
+spec.cpu2017.rawflags054: BSR8IMMinvaO/mNH2a8GeDX6+82PjZWQfHyJcrcU+ZxMdBzHa2sHaadxrkj4P2gmXgIqUAL1xINa
+spec.cpu2017.rawflags055: BV57uJnsf//sw+33z4Jn+x9kXekPtsP88D5HHb27tpSzO+2C5cptxQYrBYEYN1U9FGOvR81c18iy
+spec.cpu2017.rawflags056: DZoyZpLSpWjG7e1lz1RmCWAqo5B3d4R09R+SjoRjpE84SSDre4glfvsro2Kaq9EYK17CdF+Cczfe
+spec.cpu2017.rawflags057: jKuuZZrEhJ7H5y/E31XeMua+6GEH71S6UUukbhO6rskFCtM0UX78XpnG2TyyfCwcsqd7wd1vAAR4
+spec.cpu2017.rawflags058: /Pnt4qo9n+59sgB3X4oyzjZgapJUYvPs8unelohlJfkOPg3FnzXhsmY3rsCtq8x4OsJ/QJF296cd
+spec.cpu2017.rawflags059: Gml/rezP9r+c7M/2Hys7mHKyP9t/vOx298OC+fp2rfh4/u/Kv6Yv9b4vZzNuS9F7jE/h6NfcOvjq
+spec.cpu2017.rawflags060: pInP1vdtgPhr7ONf/ra79z2cHyWiedg06oJvAR86A2n0cPEmfjN5jK0vEP1cRdq66oIGefSvoV/v
+spec.cpu2017.rawflags061: 6dc+/brHHzyMLSFa25gu1XAsEN3mzXUS2S9fgPAOUX8YD2GbKFeAYuX802l7hdS76An3zRQ+sebv
+spec.cpu2017.rawflags062: wHChBIP5mwB75ZrXBKHGwmFKlTSPKO12vjYimXI3rMffajq1w7tQnDGFPQZPY1D8xAS5uSaArPnO
+spec.cpu2017.rawflags063: yY/vYrHJA3wYq2en0rGaSvBLi/Bwr7cVflpGaO5AnCsJsXo4ZcnM7rrXChX5QOWqC0JRsUoR6IHd
+spec.cpu2017.rawflags064: vuFr9FhN6tmMr9b42vghbHRs574SGJWoarmyIwb4pqPLHsx4znf2nWfWNnZ8zCUiSIZM0o+UZRwn
+spec.cpu2017.rawflags065: tJJug5Y2si0q+U4xyLiZkBt1kJiUeZocltL0uBSTJKdaxKA7ocKCLhWn1CfaicE71Z00u7XU7rL2
+spec.cpu2017.rawflags066: ygdphZa2vKNDWg0HY5tv1hqjo3VJvivroM0aWUmg60TzyAsZOYnsaCdN6BLNtQBAhpquOrlgk2Vs
+spec.cpu2017.rawflags067: HsQ09ymuydpz2ZvIAbdKucoKfceTLs7dlQlU+aAz3nfOQCdrv9NVGzpxyx5pyZqWrpjWJenFvibx
+spec.cpu2017.rawflags068: 2dzccXCd+pBz9+3XGGxvSc7WDmfR6uX2BpEmBhdPH0TPw4GhyzvJ/N+370s1SGa1Q7rTJa393q+9
+spec.cpu2017.rawflags069: NnxVQ0y3wH5J+PF7qG/pf4qHh7dPXOxy6zSi/z7WNu1+Zof22CNIQnaULybk/1Q7Kj7Vkg7u/p8E
+spec.cpu2017.rawflags070: /wLj2aCg
+spec.cpu2017.runcpuver: 5825
+spec.cpu2017.runmode: rate
+spec.cpu2017.size: test
+spec.cpu2017.submit: 0
+spec.cpu2017.suitehash: 08a9e418c4b0d70f48f6fa9d654a73f76038d318bd07b3247d6a375f17a510ae54f229a04ba989ce8a5b7df7d8ebae6c621f0c0c1789a2c8dac51aa5506828e7
+spec.cpu2017.suitever: 1.0.5
+spec.cpu2017.sw_parallel: --
+spec.cpu2017.sysinfo_program: specperl /home/sipeed/spec2017/bin/sysinfo
+spec.cpu2017.sysinfo_program_hash: sysinfo:SHA:32259ebd59f3e93740723202f27c44c82ee68e0f2e40cd2ca50cfd5519772397
+spec.cpu2017.table: 1
+spec.cpu2017.time: 1701264129.21634
+spec.cpu2017.toolset: linux-riscv64
+spec.cpu2017.toolshash: 910e149808384bb528d2416c86911c429b81d0e60ed4252668d18e2543669c6aa3b4629aff0e183fcfbb0fff02dc73cb0fb4e880ef2223f371aef7402b05936f
+spec.cpu2017.toolvers000: @eNpVkE9vwyAMxb8Qqihx4tDrpJ176XliEenQICAg69evgSl/bn4/zHu2P+6PT6ue6a5i0vES3A16
+spec.cpu2017.toolvers001: QPatl+nHqfhbSI+ibyTpXAEMYgNfk3fOL5dgb/2IyEgGFXXVkgPpZTbPJiX/l8dP/CrYTDOs2dhU
+spec.cpu2017.toolvers002: CADvdnJsLX6zj07VMWqfNSnPxuoKsCPgJ5X3eOtrNiDHUh/cYJAjc8rYYwKgqKxEN0Cr0qPJPjaf
+spec.cpu2017.toolvers003: a8f8PqZPZ8eBhXLJbd2oXq0GweK6TGGlK9E56XBr2Ibc0qTEKk5Ly479kemZjW95eZH0
+spec.cpu2017.tunelist000: base
+spec.cpu2017.tunelist001: peak
+spec.cpu2017.unitbase: SPEC
+spec.cpu2017.valid: X
+spec.cpu2017.compnotes_sysinfo000: @eNqNWFlvGkkQfs+vKBFFPtbA3DBIefCBHWvNIQwb7RNqZhqmlbm2uwfC/vqtngMcpydZhCxg6quq
+spec.cpu2017.compnotes_sysinfo001: /rpOp5mkYp3HRK7FUbB0m60NwxgBvFbfIOfZjpME+lGW0L5gOaVhX+Q0sAxz0N+wtF/jPqQ6VS6q
+spec.cpu2017.compnotes_sysinfo002: WtD9CLjrDxzItoC4Yddwu6YP/iYI6XBr+b4f2HbomVvP8Ycuddyh61Pia1WayjtepClLd5ClEOfM
+spec.cpu2017.compnotes_sysinfo003: IfCVhjDN9mD5YNojyxqZFlqybL0K9Er7wCpPvlrCJR5f0gRWaUg5LKmQV1DSQQQISlPYHEEgIRBk
+spec.cpu2017.compnotes_sysinfo004: SYJOFJLFTDIqenq9iobHjEOScVoq4gmRDIH4lhFTSgP1/UZp16qwlWv4iqTMxajfPxwOPXUNvYzv
+spec.cpu2017.compnotes_sysinfo005: +kFelNfxkAWiH2Tplu16kUzij7+6G7uNBUeZeuQZXjrefqC0typx1MmutY9cpeYaHlgI+BhYSFPJ
+spec.cpu2017.compnotes_sysinfo006: tkdAdchDSOMewPMWjlkBh6yIQ72SUj/E7BsFmcGBM0kVhEN2SEH8GKTt7HmVL1rS/i9fXvtRB0b7
+spec.cpu2017.compnotes_sysinfo007: o+oABnTyCH8LSIxMdECSnYBtVqQhsjCnPCK5qCIB3wTjIlaBJ8oovNEqHlZHwqAisGdcFiRm/2IW
+spec.cpu2017.compnotes_sysinfo008: VBjUOkXSicTPuVSpguztCioERNkBv+h1Vs4G6JeEIGK5iiZOlae8jtNKuxbtt7Pgu1X04stBJjCq
+spec.cpu2017.compnotes_sysinfo009: 0JOMi45O2jTqWC9t46WyTYwnEHB5TwqVJaPKw/JUERVUcRYdkLbm9BDSnKYq4HqwjCi6H8fZAeX1
+spec.cpu2017.compnotes_sysinfo010: 5mrn6PeA8lziaX+KfUjYLpJlHG8ocBozsokpkrxC6wcmIwgq13pXWhOqaOkfuE2uxQJtjbRCltGw
+spec.cpu2017.compnotes_sysinfo011: d8vxViTWioLTE6OciWDvOXroifi7I2bOjGNYnYAAL0zKmMI4DRlJtQrsk+37+epSXL0Bl7epB52s
+spec.cpu2017.compnotes_sysinfo012: ztIu3h2twZjHQo7A6Grrsum0sVRWmR8vJCABXmxIJNEi3CaE8qJbipZejMBzFA9Cj3HPmLDSrwB/
+spec.cpu2017.compnotes_sysinfo013: 3mmlvTcW2O+l3+iOrUbcnOilB21EDE7hkhYJCWQM3W5EeHgg2Ffg6+1i+jx9GmFFaB5fpFhpL+rw
+spec.cpu2017.compnotes_sysinfo014: VQ3oFMeYXJhdeYZJg6VBz2JZY051SxWEnl6upZWY/rtWktCkrb6aTY2Y0GSZSRI3IWR6pun5rgXf
+spec.cpu2017.compnotes_sysinfo015: tGRZTbX4UuzonOzw+Q9wQw9yz6BcgbB2NgjLcIZtxtoS2SoTuV8IXs5EsdissUpQguWhq+1sVpPU
+spec.cpu2017.compnotes_sysinfo016: D3SDuQdP01X/haXFd8DJ5XKTZd8OOCRc6aEtdFv2mW4qg/517cJ1/XVPucAada3H1oyEpT/rWhZj
+spec.cpu2017.compnotes_sysinfo017: 1OrpKXTqA2SiW9sZ6eXOtX++GC+Xf6+nt5Px586vD67tDJZ7qkagV9ICO7vw13jx+jybrp8fPndM
+spec.cpu2017.compnotes_sysinfo018: Sy/uGe/FlexvnfN+tnI/exiXjjZQLXBwtoduVRegFzxb+DKbjNerxcvnztuJsMKW443ex+HZ1Otq
+spec.cpu2017.compnotes_sysinfo019: Pp8tlr9UIoo8z7hs0VV7w+n++Lsg8M9271bPLw+KfzWfY6/3sV84nuXpce473MPtcnxC6iC2cTZ1
+spec.cpu2017.compnotes_sysinfo020: P5tMnpfK1tYfeoPAtSxn6BqOtzV9zyWow9yEjuu4roXzlO3p9wXbODuxWE2n44XS6DnuwLVMb6h1
+spec.cpu2017.compnotes_sysinfo021: 3G4rFHZZKIqU4PLQJVqy7KY0VGlRLThuzzR6pmn/AR8deJ3MVS6NJ/MlpjuDWSCxaoHhjVx/ZDqw
+spec.cpu2017.compnotes_sysinfo022: Wt6X208zGpzzQ2+vpZ7Ydr1rdWO6pzG41Yo1VCuW6eoRbarKavE6H99Due1IbDoj/VKph9dX8Mhi
+spec.cpu2017.compnotes_sysinfo023: Ws946rU85tj3XrF4l6NYCLd7wmL18RNM1IyIP2XaXLKbUtIP6b7PM+yI9RAoHew5pvukWo+l/vrD
+spec.cpu2017.compnotes_sysinfo024: J/XLJ+jrFbUduSwjt2HI1GCo5v43e185YoYJLkUBNuh6QBW9Nz1cTZb1UAmHCFdOtSgxPBHPOZV6
+spec.cpu2017.compnotes_sysinfo025: g4qkt+tkNf1enOxcnNZ5TkkoTtMyTlFogwWRupyOMoLDczUXKL+0xsqidZo9UBQHYxIEBSeSxkds
+spec.cpu2017.compnotes_sysinfo026: I+gpNnsadm5gU0g1qZfu42aRkGMzSidU3qilGp+iFtSkt6UOtuX0n4KWiwlJsWMrm439G9gynlSf
+spec.cpu2017.compnotes_sysinfo027: 1BqgjHUeJstHTJW759lrB4TE31FaO8DYw7ZsLWvcJc7H6l8XJU/lzb1bPK8+/AeCNsC/
+spec.cpu2017.results.503_bwaves_r.base.000.basepeak: 0
+spec.cpu2017.results.503_bwaves_r.base.000.benchmark: 503.bwaves_r
+spec.cpu2017.results.503_bwaves_r.base.000.copies: 4
+spec.cpu2017.results.503_bwaves_r.base.000.copytime000: 0.104159
+spec.cpu2017.results.503_bwaves_r.base.000.copytime001: 0.008064
+spec.cpu2017.results.503_bwaves_r.base.000.copytime002: 0.430409
+spec.cpu2017.results.503_bwaves_r.base.000.copytime003: 0.007571
+spec.cpu2017.results.503_bwaves_r.base.000.dp: 6
+spec.cpu2017.results.503_bwaves_r.base.000.errors000: copy 1 non-zero return code (exit code=139, signal=0)
+spec.cpu2017.results.503_bwaves_r.base.000.errors001: copy 3 non-zero return code (exit code=139, signal=0)
+spec.cpu2017.results.503_bwaves_r.base.000.errors002: copy 0 non-zero return code (exit code=139, signal=0)
+spec.cpu2017.results.503_bwaves_r.base.000.errors003: copy 2 non-zero return code (exit code=139, signal=0)
+spec.cpu2017.results.503_bwaves_r.base.000.exehash: 51aaf87be1e7bbd9b9210e144398d37c25a412f248e09a0f16f0425c9d8de46f
+spec.cpu2017.results.503_bwaves_r.base.000.iteration: 0
+spec.cpu2017.results.503_bwaves_r.base.000.label: clang17-riscv64-64
+spec.cpu2017.results.503_bwaves_r.base.000.ranks: 1
+spec.cpu2017.results.503_bwaves_r.base.000.rate_end: 1701264153.59027
+spec.cpu2017.results.503_bwaves_r.base.000.rate_start: 1701264153.1593
+spec.cpu2017.results.503_bwaves_r.base.000.ratio: --
+spec.cpu2017.results.503_bwaves_r.base.000.rc: 35584
+spec.cpu2017.results.503_bwaves_r.base.000.reference: --
+spec.cpu2017.results.503_bwaves_r.base.000.reference_power: --
+spec.cpu2017.results.503_bwaves_r.base.000.reported_nsec: 430971145
+spec.cpu2017.results.503_bwaves_r.base.000.reported_sec: 0
+spec.cpu2017.results.503_bwaves_r.base.000.reported_time: 0.430971
+spec.cpu2017.results.503_bwaves_r.base.000.runmode: rate
+spec.cpu2017.results.503_bwaves_r.base.000.selected: 0
+spec.cpu2017.results.503_bwaves_r.base.000.submit: 0
+spec.cpu2017.results.503_bwaves_r.base.000.threads: 1
+spec.cpu2017.results.503_bwaves_r.base.000.valid: RE
+spec.cpu2017.compopts000.503_bwaves_r.base: @eNqNkFFPwjAUhd/3K5q+d0AkGhZGso2C07E2bEvUlwZGR6q4LusQ8dfbDYbEKHpf2vTee875Gsoc
+spec.cpu2017.compopts001.503_bwaves_r.base: vS5eeCY2HMiiEjJXlqGqUqQVK7f5SpTsjZci29uwBw19VXrEhl1z0O1Dw5hQagGoCp4WBUDjiGJP
+spec.cpu2017.compopts002.503_bwaves_r.base: H+EYu8kUoN3xiTlJTFiUUDrHUcQIxeGMtr2AXvfBUMltmfIRQPJ0N7OiEB98ZWaDd2hoH48mk8CZ
+spec.cpu2017.compopts003.503_bwaves_r.base: Rjb85tR0XRx6t0wHamcuujcr+CGeO4ySeey4fuDHj61yEwoaHpnVeJ2tKjtLkXeyzSJfo5zvUO8G
+spec.cpu2017.compopts004.503_bwaves_r.base: 1IXSOvDx30wJ0BogcnUi0AoWmHj27wqHCeLeERpr83O5v5CJBfSSP/OfsO42xv+CCvzw/iLUgexA
+spec.cpu2017.compopts005.503_bwaves_r.base: cqqhXD7ztFIjcFZfYY8kwfgi64+RmzWS1Phn7J+GnroL
+spec.cpu2017.compvers000.503_bwaves_r.base: @eNoNxbEOgjAQANC9X3GjxpRCgpJ0FU1YxChxJQVObCxX0kLBxW/Xtzw4H+vH6XYvyktdXqt/kuXY
+spec.cpu2017.compvers001.503_bwaves_r.base: aEXwNIp6TrhAQOe1JUiyKI5i2Oxcm/Lki+u4dxg+1idbVinX4yTBad+GQ8pnepNdiBtN88p7mln1
+spec.cpu2017.compvers002.503_bwaves_r.base: cqg6GGyHRsJovV5ZQX5SxmCXaydBzN4JoxthTBh4kolGE/sB7ZE2Yw==
+spec.cpu2017.results.503_bwaves_r.peak.000.basepeak: 0
+spec.cpu2017.results.503_bwaves_r.peak.000.benchmark: 503.bwaves_r
+spec.cpu2017.results.503_bwaves_r.peak.000.copies: 4
+spec.cpu2017.results.503_bwaves_r.peak.000.copytime000: 0.013
+spec.cpu2017.results.503_bwaves_r.peak.000.copytime001: 0.134306
+spec.cpu2017.results.503_bwaves_r.peak.000.copytime002: 0.443125
+spec.cpu2017.results.503_bwaves_r.peak.000.copytime003: 0.012101
+spec.cpu2017.results.503_bwaves_r.peak.000.dp: 6
+spec.cpu2017.results.503_bwaves_r.peak.000.errors000: copy 0 non-zero return code (exit code=139, signal=0)
+spec.cpu2017.results.503_bwaves_r.peak.000.errors001: copy 3 non-zero return code (exit code=139, signal=0)
+spec.cpu2017.results.503_bwaves_r.peak.000.errors002: copy 1 non-zero return code (exit code=139, signal=0)
+spec.cpu2017.results.503_bwaves_r.peak.000.errors003: copy 2 non-zero return code (exit code=139, signal=0)
+spec.cpu2017.results.503_bwaves_r.peak.000.exehash: 6c5bd7b82ee7af77c75ba77eb99017461e20cd67122e066519aa05753107363b
+spec.cpu2017.results.503_bwaves_r.peak.000.iteration: 0
+spec.cpu2017.results.503_bwaves_r.peak.000.label: clang17-riscv64-64
+spec.cpu2017.results.503_bwaves_r.peak.000.ranks: 1
+spec.cpu2017.results.503_bwaves_r.peak.000.rate_end: 1701264154.66223
+spec.cpu2017.results.503_bwaves_r.peak.000.rate_start: 1701264154.21844
+spec.cpu2017.results.503_bwaves_r.peak.000.ratio: --
+spec.cpu2017.results.503_bwaves_r.peak.000.rc: 35584
+spec.cpu2017.results.503_bwaves_r.peak.000.reference: --
+spec.cpu2017.results.503_bwaves_r.peak.000.reference_power: --
+spec.cpu2017.results.503_bwaves_r.peak.000.reported_nsec: 443793058
+spec.cpu2017.results.503_bwaves_r.peak.000.reported_sec: 0
+spec.cpu2017.results.503_bwaves_r.peak.000.reported_time: 0.443793
+spec.cpu2017.results.503_bwaves_r.peak.000.runmode: rate
+spec.cpu2017.results.503_bwaves_r.peak.000.selected: 0
+spec.cpu2017.results.503_bwaves_r.peak.000.submit: 0
+spec.cpu2017.results.503_bwaves_r.peak.000.threads: 1
+spec.cpu2017.results.503_bwaves_r.peak.000.valid: RE
+spec.cpu2017.compopts000.503_bwaves_r.peak: @eNqNkF1vgjAUhu/5FU3vi5qYLRIxAayODWkjkGy7aRSL6eYooTi3/foVFGaW6HZuetLz8b7PCWWO
+spec.cpu2017.compopts001.503_bwaves_r.peak: 3lavPBM7DmRRCZkry1BVKdKKlft8I0r2zkuRfdpwAA2dKt1iw7456g+hYcwotQBUBU+LAqBpRLGn
+spec.cpu2017.compopts002.503_bwaves_r.peak: n3CK3WQO0OH0xZwkJixKKF3iKGKE4nBB21pAb4ZgrOS+TPkEINnlZlYU4otvzGz0AQ2t49FkFjjz
+spec.cpu2017.compopts003.503_bwaves_r.peak: yIa/lJqqi0PvjmlDbc9V9WYEP8ZLh1GyjB3XD/z4qd3cmIKGRxY1Xm+vyt5a5L1st8q3KOcHNLgF
+spec.cpu2017.compopts004.503_bwaves_r.peak: daC0Nny6mykB2gJEspWqOgi9xAIzz7685NhB3HtCY61/vvEvamIBPeQv/Gesq632v9ACP3y4inbk
+spec.cpu2017.compopts005.503_bwaves_r.peak: 63i6GMv1C08rNQFn8WP5xBNMrxJfMt5MkqS+w9kRvgE93r/3
+spec.cpu2017.compvers000.503_bwaves_r.peak: @eNoNxbEOgjAQANC9X3GjxpRCgpJ0FU1YxChxJQVObCxX0kLBxW/Xtzw4H+vH6XYvyktdXqt/kuXY
+spec.cpu2017.compvers001.503_bwaves_r.peak: aEXwNIp6TrhAQOe1JUiyKI5i2Oxcm/Lki+u4dxg+1idbVinX4yTBad+GQ8pnepNdiBtN88p7mln1
+spec.cpu2017.compvers002.503_bwaves_r.peak: cqg6GGyHRsJovV5ZQX5SxmCXaydBzN4JoxthTBh4kolGE/sB7ZE2Yw==

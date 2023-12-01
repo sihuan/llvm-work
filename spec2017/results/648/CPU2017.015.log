@@ -1,0 +1,222 @@
+runcpu v5825 started at 2023-11-29 13:17:04 on "lpi4a"
+runcpu is: /home/sipeed/spec2017/bin/harness/runcpu
+runcpu: runcpu --config=llvm-test.cfg --size=test 648.exchange2_s
+toolset: linux-riscv64
+
+Locating benchmarks...found 47 benchmarks in 53 benchsets.
+Reading config file '/home/sipeed/spec2017/config/llvm-test.cfg'
+
+1 configuration selected:
+
+ Action    Run Mode   Workload      Report Type      Benchmarks
+--------   --------   --------   -----------------   --------------------------
+validate   speed      test       SPECspeed2017_int   648.exchange2_s           
+-------------------------------------------------------------------------------
+
+Setting up environment for running 648.exchange2_s...
+Starting runcpu for 648.exchange2_s...
+Running "specperl /home/sipeed/spec2017/bin/sysinfo" to gather system information.
+sysinfo: r5974 of 2018-05-19 (9bcde8f2999c33d61f64985e45859ea9)
+sysinfo: Getting system information for Linux...
+sysinfo: ...getting CPU info
+sysinfo: ...getting info from numactl
+sysinfo: ...getting memory info
+sysinfo: ...getting OS info
+sysinfo: ...getting disk info
+sysinfo: ...trying to get DIMM info from dmidecode
+Read 88 info lines from the sysinfo program.
+Retrieving flags file (/home/sipeed/spec2017/config/flags/clang.xml)...
+Verbosity = 5
+Action    = validate
+Tune      = base,peak
+Label     = clang17-riscv64-64
+Size      = test
+benchmarks= 648.exchange2_s
+outputs   = txt,html,cfg,pdf,csv
+username  = sipeed
+Environment settings:
+LD_LIBRARY_PATH = "%{gcc_dir}/lib64/:%{gcc_dir}/lib/:/lib64"
+
+Benchmarks selected: 648.exchange2_s
+Compiling Binaries
+------------------------------------------------------------------------
+FPP: "specpp -DSPEC -DNDEBUG -DSPEC_OPENMP -DUSE_OPENMP -DSPEC_LP64 <source> -o <source>.fppized.f9x"
+P: CPUFLAGS="-DSPEC -DNDEBUG"
+O: OPTIMIZE=""
+O: EXTRA_OPTIMIZE="-DSPEC_OPENMP -DUSE_OPENMP"
+O: FPPOPTIMIZE=""
+O: EXTRA_FPPOPTIMIZE=""
+O: FOPTIMIZE=""
+O: EXTRA_FOPTIMIZE=""
+P: PORTABILITY=""
+P: EXTRA_PORTABILITY="-DSPEC_LP64"
+P: FPORTABILITY=""
+P: EXTRA_FPORTABILITY=""
+COMP: "/usr/bin/flang-new-17     -c -o options.o -g -O3 <source>"
+C: FC="/usr/bin/flang-new-17    "
+C: FOBJOPT="-c -o options"
+P: CPUFLAGS="-DSPEC -DNDEBUG"
+P: BENCH_FLAGS=""
+P: BENCH_FFLAGS=""
+O: OPTIMIZE="-g -O3"
+O: FOPTIMIZE=""
+P: PORTABILITY=""
+P: FPORTABILITY=""
+O: EXTRA_FFLAGS=""
+O: EXTRA_OPTIMIZE="-DSPEC_OPENMP  -DUSE_OPENMP"
+O: EXTRA_FOPTIMIZE=""
+P: EXTRA_PORTABILITY="-DSPEC_LP64"
+P: EXTRA_FPORTABILITY=""
+LINK: "/usr/bin/flang-new-17          -g -O3        -DSPEC_OPENMP  -DUSE_OPENMP  <objects>            -o options  "
+C: LD="/usr/bin/flang-new-17    "
+O: OPTIMIZE="-g -O3"
+O: EXTRA_OPTIMIZE="-DSPEC_OPENMP  -DUSE_OPENMP"
+C: LDOUT="-o options"
+ FC_VERSION_OPTION:
+Debian flang-new version 17.0.0 (+rc4-1~exp5revyos1)
+Target: riscv64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /usr/lib/llvm-17/bin
+  Up to date 648.exchange2_s base clang17-riscv64-64
+------------------------------------------------------------------------
+FPP: "specpp -DSPEC -DNDEBUG -DSPEC_OPENMP -DUSE_OPENMP -DSPEC_LP64 <source> -o <source>.fppized.f9x"
+P: CPUFLAGS="-DSPEC -DNDEBUG"
+O: OPTIMIZE=""
+O: EXTRA_OPTIMIZE="-DSPEC_OPENMP -DUSE_OPENMP"
+O: FPPOPTIMIZE=""
+O: EXTRA_FPPOPTIMIZE=""
+O: FOPTIMIZE=""
+O: EXTRA_FOPTIMIZE=""
+P: PORTABILITY=""
+P: EXTRA_PORTABILITY="-DSPEC_LP64"
+P: FPORTABILITY=""
+P: EXTRA_FPORTABILITY=""
+COMP: "/usr/bin/flang-new-17     -c -o options.o -g -Ofast <source>"
+C: FC="/usr/bin/flang-new-17    "
+C: FOBJOPT="-c -o options"
+P: CPUFLAGS="-DSPEC -DNDEBUG"
+P: BENCH_FLAGS=""
+P: BENCH_FFLAGS=""
+O: OPTIMIZE="-g -Ofast"
+O: FOPTIMIZE=""
+P: PORTABILITY=""
+P: FPORTABILITY=""
+O: EXTRA_FFLAGS=""
+O: EXTRA_OPTIMIZE="-DSPEC_OPENMP  -DUSE_OPENMP"
+O: EXTRA_FOPTIMIZE=""
+P: EXTRA_PORTABILITY="-DSPEC_LP64"
+P: EXTRA_FPORTABILITY=""
+LINK: "/usr/bin/flang-new-17          -g -Ofast        -DSPEC_OPENMP  -DUSE_OPENMP  <objects>            -o options  "
+C: LD="/usr/bin/flang-new-17    "
+O: OPTIMIZE="-g -Ofast"
+O: EXTRA_OPTIMIZE="-DSPEC_OPENMP  -DUSE_OPENMP"
+C: LDOUT="-o options"
+ FC_VERSION_OPTION:
+Debian flang-new version 17.0.0 (+rc4-1~exp5revyos1)
+Target: riscv64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /usr/lib/llvm-17/bin
+  Up to date 648.exchange2_s peak clang17-riscv64-64
+
+
+Setting Up Run Directories
+  Setting up 648.exchange2_s test base clang17-riscv64-64: run_base_test_clang17-riscv64-64.0000
+  Setting up 648.exchange2_s test peak clang17-riscv64-64: run_peak_test_clang17-riscv64-64.0000
+-----------------------------------
+Running Benchmarks
+-----------------------------------
+  Running 648.exchange2_s test base clang17-riscv64-64 threads:4 [2023-11-29 13:17:15]
+OpenMP environment variables removed: None
+OpenMP environment variables in effect:
+	OMP_NUM_THREADS	=> '4'
+Pre-run environment changes:
+	'OMP_NUM_THREADS' added: (value now '4')
+Commands to run (specinvoke command file):
+    -r
+    -N C
+    -C /home/sipeed/spec2017/benchspec/CPU/648.exchange2_s/run/run_base_test_clang17-riscv64-64.0000
+    -o exchange2.txt -e exchange2.err ../run_base_test_clang17-riscv64-64.0000/exchange2_s_base.clang17-riscv64-64 0 > exchange2.txt 2>> exchange2.err (timed)
+Specinvoke: /home/sipeed/spec2017/bin/specinvoke -d /home/sipeed/spec2017/benchspec/CPU/648.exchange2_s/run/run_base_test_clang17-riscv64-64.0000 -f speccmds.cmd -q -e speccmds.err -o speccmds.stdout
+Issuing command '/home/sipeed/spec2017/bin/specinvoke -d /home/sipeed/spec2017/benchspec/CPU/648.exchange2_s/run/run_base_test_clang17-riscv64-64.0000 -f speccmds.cmd -q -e speccmds.err -o speccmds.stdout'
+Start command: 2023-11-29 13:17:15 (1701263835.82891)
+Stop command: 2023-11-29 13:17:54 (1701263874.73667)
+Elapsed time for command: 00:00:38 (38.9077579975128)
+Workload elapsed time (copy 0 workload 1) = 38.708381 seconds
+Copy 0 of 648.exchange2_s (base test) run 1 finished at 2023-11-29 13:17:54.  Total elapsed time: 38.708381
+OpenMP environment variables removed: None
+OpenMP environment variables in effect:
+	OMP_NUM_THREADS	=> '4'
+Pre-run environment changes:
+	'OMP_NUM_THREADS' added: (value now '4')
+comparing 's.txt' with 
+Specinvoke: /home/sipeed/spec2017/bin/specinvoke -d /home/sipeed/spec2017/benchspec/CPU/648.exchange2_s/run/run_base_test_clang17-riscv64-64.0000 -f compare.cmd -E -e compare.err -o compare.stdout
+Issuing command '/home/sipeed/spec2017/bin/specinvoke -d /home/sipeed/spec2017/benchspec/CPU/648.exchange2_s/run/run_base_test_clang17-riscv64-64.0000 -f compare.cmd -E -e compare.err -o compare.stdout'
+Start command: 2023-11-29 13:17:54 (1701263874.99827)
+Stop command: 2023-11-29 13:17:55 (1701263875.79642)
+Elapsed time for command: 00:00:00 (0.798149108886719)
+Benchmark Times:
+  Run Start:    2023-11-29 13:17:15 (1701263835)
+  Run Stop:     2023-11-29 13:17:54 (1701263874)
+  Run Elapsed:  00:00:39 (39)
+  Run Reported: 00:00:38 (38 708704000 38.708704)
+ Success 648.exchange2_s base test ratio=-0.00, runtime=38.708704, copies=1, threads=4, power=0.00W, temp=0.00 degC, humidity=0.00%
+-----------------------------------
+  Running 648.exchange2_s test peak clang17-riscv64-64 threads:4 [2023-11-29 13:17:55]
+OpenMP environment variables removed: None
+OpenMP environment variables in effect:
+	OMP_NUM_THREADS	=> '4'
+Pre-run environment changes:
+	'OMP_NUM_THREADS' added: (value now '4')
+Commands to run (specinvoke command file):
+    -r
+    -N C
+    -C /home/sipeed/spec2017/benchspec/CPU/648.exchange2_s/run/run_peak_test_clang17-riscv64-64.0000
+    -o exchange2.txt -e exchange2.err ../run_peak_test_clang17-riscv64-64.0000/exchange2_s_peak.clang17-riscv64-64 0 > exchange2.txt 2>> exchange2.err (timed)
+Specinvoke: /home/sipeed/spec2017/bin/specinvoke -d /home/sipeed/spec2017/benchspec/CPU/648.exchange2_s/run/run_peak_test_clang17-riscv64-64.0000 -f speccmds.cmd -q -e speccmds.err -o speccmds.stdout
+Issuing command '/home/sipeed/spec2017/bin/specinvoke -d /home/sipeed/spec2017/benchspec/CPU/648.exchange2_s/run/run_peak_test_clang17-riscv64-64.0000 -f speccmds.cmd -q -e speccmds.err -o speccmds.stdout'
+Start command: 2023-11-29 13:17:56 (1701263876.12452)
+Stop command: 2023-11-29 13:18:30 (1701263910.16866)
+Elapsed time for command: 00:00:34 (34.0441401004791)
+Workload elapsed time (copy 0 workload 1) = 33.849421 seconds
+Copy 0 of 648.exchange2_s (peak test) run 1 finished at 2023-11-29 13:18:29.  Total elapsed time: 33.849421
+OpenMP environment variables removed: None
+OpenMP environment variables in effect:
+	OMP_NUM_THREADS	=> '4'
+Pre-run environment changes:
+	'OMP_NUM_THREADS' added: (value now '4')
+comparing 's.txt' with 
+Specinvoke: /home/sipeed/spec2017/bin/specinvoke -d /home/sipeed/spec2017/benchspec/CPU/648.exchange2_s/run/run_peak_test_clang17-riscv64-64.0000 -f compare.cmd -E -e compare.err -o compare.stdout
+Issuing command '/home/sipeed/spec2017/bin/specinvoke -d /home/sipeed/spec2017/benchspec/CPU/648.exchange2_s/run/run_peak_test_clang17-riscv64-64.0000 -f compare.cmd -E -e compare.err -o compare.stdout'
+Start command: 2023-11-29 13:18:30 (1701263910.40467)
+Stop command: 2023-11-29 13:18:31 (1701263911.22167)
+Elapsed time for command: 00:00:00 (0.817002058029175)
+Benchmark Times:
+  Run Start:    2023-11-29 13:17:56 (1701263876)
+  Run Stop:     2023-11-29 13:18:30 (1701263910)
+  Run Elapsed:  00:00:34 (34)
+  Run Reported: 00:00:33 (33 849755000 33.849755)
+ Success 648.exchange2_s peak test ratio=-0.00, runtime=33.849755, copies=1, threads=4, power=0.00W, temp=0.00 degC, humidity=0.00%
+Success: 2x648.exchange2_s
+Producing Raw Reports
+ label: clang17-riscv64-64
+  workload: test
+   benchset: intspeed
+   metric: SPECspeed2017_int_base, SPECspeed2017_int_peak
+    format: raw -> /home/sipeed/spec2017/result/CPU2017.015.intspeed.test.rsf
+Parsing flags for 648.exchange2_s base: done
+Parsing flags for 648.exchange2_s peak: done
+Doing flag reduction: done
+    format: flags -> /home/sipeed/spec2017/result/CPU2017.015.intspeed.test.flags.html
+    format: cfg -> /home/sipeed/spec2017/result/CPU2017.015.intspeed.test.cfg
+    format: CSV -> /home/sipeed/spec2017/result/CPU2017.015.intspeed.test.csv
+    format: PDF -> /home/sipeed/spec2017/result/CPU2017.015.intspeed.test.pdf
+    format: HTML -> /home/sipeed/spec2017/result/CPU2017.015.intspeed.test.html
+    format: Text -> /home/sipeed/spec2017/result/CPU2017.015.intspeed.test.txt
+   benchset: intrate
+   benchset: fpspeed
+   benchset: fprate
+runcpu finished at 2023-11-29 13:19:23; 134 total seconds elapsed
+Info: file_tail(283022): file '/home/sipeed/spec2017/tmp/CPU2017.015/templogs/preenv.intspeed.015.0.debug' was removed and will no longer be followed.  No action is required.
+The log for this run is in /home/sipeed/spec2017/result/CPU2017.015.log
+
+runcpu finished at 2023-11-29 13:19:23; 138 total seconds elapsed

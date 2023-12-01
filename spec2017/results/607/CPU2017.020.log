@@ -1,0 +1,287 @@
+runcpu v5825 started at 2023-11-29 13:44:12 on "lpi4a"
+runcpu is: /home/sipeed/spec2017/bin/harness/runcpu
+runcpu: runcpu --config=llvm-test.cfg --size=test 607.cactuBSSN_s
+toolset: linux-riscv64
+
+Locating benchmarks...found 47 benchmarks in 53 benchsets.
+Reading config file '/home/sipeed/spec2017/config/llvm-test.cfg'
+
+1 configuration selected:
+
+ Action    Run Mode   Workload     Report Type      Benchmarks
+--------   --------   --------   ----------------   ---------------------------
+validate   speed      test       SPECspeed2017_fp   607.cactuBSSN_s            
+-------------------------------------------------------------------------------
+
+Setting up environment for running 607.cactuBSSN_s...
+Starting runcpu for 607.cactuBSSN_s...
+Running "specperl /home/sipeed/spec2017/bin/sysinfo" to gather system information.
+sysinfo: r5974 of 2018-05-19 (9bcde8f2999c33d61f64985e45859ea9)
+sysinfo: Getting system information for Linux...
+sysinfo: ...getting CPU info
+sysinfo: ...getting info from numactl
+sysinfo: ...getting memory info
+sysinfo: ...getting OS info
+sysinfo: ...getting disk info
+sysinfo: ...trying to get DIMM info from dmidecode
+Read 88 info lines from the sysinfo program.
+Retrieving flags file (/home/sipeed/spec2017/config/flags/clang.xml)...
+Verbosity = 5
+Action    = validate
+Tune      = base,peak
+Label     = clang17-riscv64-64
+Size      = test
+benchmarks= 607.cactuBSSN_s
+outputs   = txt,html,cfg,pdf,csv
+username  = sipeed
+Environment settings:
+LD_LIBRARY_PATH = "%{gcc_dir}/lib64/:%{gcc_dir}/lib/:/lib64"
+OMP_STACKSIZE = "120M"
+
+Benchmarks selected: 607.cactuBSSN_s
+Compiling Binaries
+------------------------------------------------------------------------
+COMP: "/usr/bin/clang++-17     -std=c++98     -c -o options.o -DSPEC -DNDEBUG  -Iinclude -DCCODE -DCCTK_DISABLE_RESTRICT=1 -g -O3       -DSPEC_OPENMP  -DUSE_OPENMP  -DSPEC_LP64  <source>"
+C: CXXC="/usr/bin/clang++-17     -std=c++98    "
+C: CXXOBJOPT="-c -o options"
+P: CPUFLAGS="-DSPEC -DNDEBUG"
+P: BENCH_FLAGS=""
+P: BENCH_CXXFLAGS="-Iinclude -DCCODE -DCCTK_DISABLE_RESTRICT=1"
+O: OPTIMIZE="-g -O3"
+O: CXXOPTIMIZE=""
+P: PORTABILITY=""
+P: CXXPORTABILITY=""
+O: EXTRA_CXXFLAGS=""
+O: EXTRA_OPTIMIZE="-DSPEC_OPENMP  -DUSE_OPENMP"
+O: EXTRA_CXXOPTIMIZE=""
+P: EXTRA_PORTABILITY="-DSPEC_LP64"
+P: EXTRA_CXXPORTABILITY=""
+COMP: "/usr/bin/clang-17   -Wno-implicit-int    -c -o options.o -DSPEC -DNDEBUG  -Iinclude -DCCODE -g -O3          -fno-strict-aliasing -DSPEC_OPENMP  -DUSE_OPENMP    -DSPEC_LP64  <source>"
+C: CC="/usr/bin/clang-17   -Wno-implicit-int   "
+C: COBJOPT="-c -o options"
+P: CPUFLAGS="-DSPEC -DNDEBUG"
+P: BENCH_FLAGS=""
+P: BENCH_CFLAGS="-Iinclude -DCCODE"
+O: OPTIMIZE="-g -O3"
+O: COPTIMIZE=""
+P: PORTABILITY=""
+P: CPORTABILITY=""
+O: EXTRA_CFLAGS="-fno-strict-aliasing"
+O: EXTRA_OPTIMIZE="-DSPEC_OPENMP  -DUSE_OPENMP"
+O: EXTRA_COPTIMIZE=""
+P: EXTRA_PORTABILITY="-DSPEC_LP64"
+P: EXTRA_CPORTABILITY=""
+COMP: "/usr/bin/flang-new-17     -c -o options.o -Iinclude -g -O3 <source>"
+C: FC="/usr/bin/flang-new-17    "
+C: FOBJOPT="-c -o options"
+P: CPUFLAGS="-DSPEC -DNDEBUG"
+P: BENCH_FLAGS=""
+P: BENCH_FFLAGS="-Iinclude -DFCODE"
+O: OPTIMIZE="-g -O3"
+O: FOPTIMIZE=""
+P: PORTABILITY=""
+P: FPORTABILITY=""
+O: EXTRA_FFLAGS=""
+O: EXTRA_OPTIMIZE="-DSPEC_OPENMP  -DUSE_OPENMP"
+O: EXTRA_FOPTIMIZE=""
+P: EXTRA_PORTABILITY="-DSPEC_LP64"
+P: EXTRA_FPORTABILITY=""
+LINK: "/usr/bin/clang++-17     -std=c++98          -g -O3        -DSPEC_OPENMP  -DUSE_OPENMP  <objects>            -o options  "
+C: LD="/usr/bin/clang++-17     -std=c++98    "
+O: OPTIMIZE="-g -O3"
+O: EXTRA_OPTIMIZE="-DSPEC_OPENMP  -DUSE_OPENMP"
+C: LDOUT="-o options"
+ CXXC_VERSION_OPTION:
+ CC_VERSION_OPTION:
+ FC_VERSION_OPTION:
+Debian clang version 17.0.0 (+rc4-1~exp5revyos1)
+Target: riscv64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /usr/bin
+Debian clang version 17.0.0 (+rc4-1~exp5revyos1)
+Target: riscv64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /usr/bin
+Debian flang-new version 17.0.0 (+rc4-1~exp5revyos1)
+Target: riscv64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /usr/lib/llvm-17/bin
+  Up to date 607.cactuBSSN_s base clang17-riscv64-64
+------------------------------------------------------------------------
+COMP: "/usr/bin/clang++-17     -std=c++98     -c -o options.o -DSPEC -DNDEBUG  -Iinclude -DCCODE -DCCTK_DISABLE_RESTRICT=1 -g -Ofast       -DSPEC_OPENMP  -DUSE_OPENMP  -DSPEC_LP64  <source>"
+C: CXXC="/usr/bin/clang++-17     -std=c++98    "
+C: CXXOBJOPT="-c -o options"
+P: CPUFLAGS="-DSPEC -DNDEBUG"
+P: BENCH_FLAGS=""
+P: BENCH_CXXFLAGS="-Iinclude -DCCODE -DCCTK_DISABLE_RESTRICT=1"
+O: OPTIMIZE="-g -Ofast"
+O: CXXOPTIMIZE=""
+P: PORTABILITY=""
+P: CXXPORTABILITY=""
+O: EXTRA_CXXFLAGS=""
+O: EXTRA_OPTIMIZE="-DSPEC_OPENMP  -DUSE_OPENMP"
+O: EXTRA_CXXOPTIMIZE=""
+P: EXTRA_PORTABILITY="-DSPEC_LP64"
+P: EXTRA_CXXPORTABILITY=""
+COMP: "/usr/bin/clang-17   -Wno-implicit-int    -c -o options.o -DSPEC -DNDEBUG  -Iinclude -DCCODE -g -Ofast           -DSPEC_OPENMP  -DUSE_OPENMP    -DSPEC_LP64  <source>"
+C: CC="/usr/bin/clang-17   -Wno-implicit-int   "
+C: COBJOPT="-c -o options"
+P: CPUFLAGS="-DSPEC -DNDEBUG"
+P: BENCH_FLAGS=""
+P: BENCH_CFLAGS="-Iinclude -DCCODE"
+O: OPTIMIZE="-g -Ofast"
+O: COPTIMIZE=""
+P: PORTABILITY=""
+P: CPORTABILITY=""
+O: EXTRA_CFLAGS=""
+O: EXTRA_OPTIMIZE="-DSPEC_OPENMP  -DUSE_OPENMP"
+O: EXTRA_COPTIMIZE=""
+P: EXTRA_PORTABILITY="-DSPEC_LP64"
+P: EXTRA_CPORTABILITY=""
+COMP: "/usr/bin/flang-new-17     -c -o options.o -Iinclude -g -Ofast <source>"
+C: FC="/usr/bin/flang-new-17    "
+C: FOBJOPT="-c -o options"
+P: CPUFLAGS="-DSPEC -DNDEBUG"
+P: BENCH_FLAGS=""
+P: BENCH_FFLAGS="-Iinclude -DFCODE"
+O: OPTIMIZE="-g -Ofast"
+O: FOPTIMIZE=""
+P: PORTABILITY=""
+P: FPORTABILITY=""
+O: EXTRA_FFLAGS=""
+O: EXTRA_OPTIMIZE="-DSPEC_OPENMP  -DUSE_OPENMP"
+O: EXTRA_FOPTIMIZE=""
+P: EXTRA_PORTABILITY="-DSPEC_LP64"
+P: EXTRA_FPORTABILITY=""
+LINK: "/usr/bin/clang++-17     -std=c++98          -g -Ofast        -DSPEC_OPENMP  -DUSE_OPENMP  <objects>            -o options  "
+C: LD="/usr/bin/clang++-17     -std=c++98    "
+O: OPTIMIZE="-g -Ofast"
+O: EXTRA_OPTIMIZE="-DSPEC_OPENMP  -DUSE_OPENMP"
+C: LDOUT="-o options"
+ CXXC_VERSION_OPTION:
+ CC_VERSION_OPTION:
+ FC_VERSION_OPTION:
+Debian clang version 17.0.0 (+rc4-1~exp5revyos1)
+Target: riscv64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /usr/bin
+Debian clang version 17.0.0 (+rc4-1~exp5revyos1)
+Target: riscv64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /usr/bin
+Debian flang-new version 17.0.0 (+rc4-1~exp5revyos1)
+Target: riscv64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /usr/lib/llvm-17/bin
+  Up to date 607.cactuBSSN_s peak clang17-riscv64-64
+
+
+Setting Up Run Directories
+  Setting up 607.cactuBSSN_s test base clang17-riscv64-64: run_base_test_clang17-riscv64-64.0000
+  Setting up 607.cactuBSSN_s test peak clang17-riscv64-64: run_peak_test_clang17-riscv64-64.0000
+-----------------------------------
+Running Benchmarks
+-----------------------------------
+  Running 607.cactuBSSN_s test base clang17-riscv64-64 threads:4 [2023-11-29 13:44:28]
+OpenMP environment variables removed: None
+OpenMP environment variables in effect:
+	OMP_NUM_THREADS	=> '4'
+	OMP_STACKSIZE	=> '120M'
+Pre-run environment changes:
+	'OMP_NUM_THREADS' added: (value now '4')
+Commands to run (specinvoke command file):
+    -r
+    -N C
+    -C /home/sipeed/spec2017/benchspec/CPU/607.cactuBSSN_s/run/run_base_test_clang17-riscv64-64.0000
+    -o spec_test.out -e spec_test.err ../run_base_test_clang17-riscv64-64.0000/cactuBSSN_s_base.clang17-riscv64-64 spec_test.par   > spec_test.out 2>> spec_test.err (timed)
+Specinvoke: /home/sipeed/spec2017/bin/specinvoke -d /home/sipeed/spec2017/benchspec/CPU/607.cactuBSSN_s/run/run_base_test_clang17-riscv64-64.0000 -f speccmds.cmd -q -e speccmds.err -o speccmds.stdout
+Issuing command '/home/sipeed/spec2017/bin/specinvoke -d /home/sipeed/spec2017/benchspec/CPU/607.cactuBSSN_s/run/run_base_test_clang17-riscv64-64.0000 -f speccmds.cmd -q -e speccmds.err -o speccmds.stdout'
+Start command: 2023-11-29 13:44:28 (1701265468.65834)
+Stop command: 2023-11-29 13:45:07 (1701265507.23242)
+Elapsed time for command: 00:00:38 (38.5740759372711)
+Workload elapsed time (copy 0 workload 1) = 38.37755 seconds
+Copy 0 of 607.cactuBSSN_s (base test) run 1 finished at 2023-11-29 13:45:07.  Total elapsed time: 38.37755
+OpenMP environment variables removed: None
+OpenMP environment variables in effect:
+	OMP_NUM_THREADS	=> '4'
+	OMP_STACKSIZE	=> '120M'
+Pre-run environment changes:
+	'OMP_NUM_THREADS' added: (value now '4')
+comparing 'gxx.xl' with abstol=5e-13, floatcompare=1
+comparing 'gxy.xl' with abstol=5e-13, floatcompare=1
+comparing 'spec_test.out' with floatcompare=1
+Specinvoke: /home/sipeed/spec2017/bin/specinvoke -d /home/sipeed/spec2017/benchspec/CPU/607.cactuBSSN_s/run/run_base_test_clang17-riscv64-64.0000 -f compare.cmd -E -e compare.err -o compare.stdout
+Issuing command '/home/sipeed/spec2017/bin/specinvoke -d /home/sipeed/spec2017/benchspec/CPU/607.cactuBSSN_s/run/run_base_test_clang17-riscv64-64.0000 -f compare.cmd -E -e compare.err -o compare.stdout'
+Start command: 2023-11-29 13:45:07 (1701265507.49327)
+Stop command: 2023-11-29 13:45:09 (1701265509.57263)
+Elapsed time for command: 00:00:02 (2.07936000823975)
+Benchmark Times:
+  Run Start:    2023-11-29 13:44:28 (1701265468)
+  Run Stop:     2023-11-29 13:45:07 (1701265507)
+  Run Elapsed:  00:00:39 (39)
+  Run Reported: 00:00:38 (38 377841000 38.377841)
+ Success 607.cactuBSSN_s base test ratio=-0.00, runtime=38.377841, copies=1, threads=4, power=0.00W, temp=0.00 degC, humidity=0.00%
+-----------------------------------
+  Running 607.cactuBSSN_s test peak clang17-riscv64-64 threads:4 [2023-11-29 13:45:10]
+OpenMP environment variables removed: None
+OpenMP environment variables in effect:
+	OMP_NUM_THREADS	=> '4'
+	OMP_STACKSIZE	=> '120M'
+Pre-run environment changes:
+	'OMP_NUM_THREADS' added: (value now '4')
+Commands to run (specinvoke command file):
+    -r
+    -N C
+    -C /home/sipeed/spec2017/benchspec/CPU/607.cactuBSSN_s/run/run_peak_test_clang17-riscv64-64.0000
+    -o spec_test.out -e spec_test.err ../run_peak_test_clang17-riscv64-64.0000/cactuBSSN_s_peak.clang17-riscv64-64 spec_test.par   > spec_test.out 2>> spec_test.err (timed)
+Specinvoke: /home/sipeed/spec2017/bin/specinvoke -d /home/sipeed/spec2017/benchspec/CPU/607.cactuBSSN_s/run/run_peak_test_clang17-riscv64-64.0000 -f speccmds.cmd -q -e speccmds.err -o speccmds.stdout
+Issuing command '/home/sipeed/spec2017/bin/specinvoke -d /home/sipeed/spec2017/benchspec/CPU/607.cactuBSSN_s/run/run_peak_test_clang17-riscv64-64.0000 -f speccmds.cmd -q -e speccmds.err -o speccmds.stdout'
+Start command: 2023-11-29 13:45:10 (1701265510.74971)
+Stop command: 2023-11-29 13:45:50 (1701265550.86078)
+Elapsed time for command: 00:00:40 (40.1110661029816)
+Workload elapsed time (copy 0 workload 1) = 39.910021 seconds
+Copy 0 of 607.cactuBSSN_s (peak test) run 1 finished at 2023-11-29 13:45:50.  Total elapsed time: 39.910021
+OpenMP environment variables removed: None
+OpenMP environment variables in effect:
+	OMP_NUM_THREADS	=> '4'
+	OMP_STACKSIZE	=> '120M'
+Pre-run environment changes:
+	'OMP_NUM_THREADS' added: (value now '4')
+comparing 'gxx.xl' with abstol=5e-13, floatcompare=1
+comparing 'gxy.xl' with abstol=5e-13, floatcompare=1
+comparing 'spec_test.out' with floatcompare=1
+Specinvoke: /home/sipeed/spec2017/bin/specinvoke -d /home/sipeed/spec2017/benchspec/CPU/607.cactuBSSN_s/run/run_peak_test_clang17-riscv64-64.0000 -f compare.cmd -E -e compare.err -o compare.stdout
+Issuing command '/home/sipeed/spec2017/bin/specinvoke -d /home/sipeed/spec2017/benchspec/CPU/607.cactuBSSN_s/run/run_peak_test_clang17-riscv64-64.0000 -f compare.cmd -E -e compare.err -o compare.stdout'
+Start command: 2023-11-29 13:45:51 (1701265551.13626)
+Stop command: 2023-11-29 13:45:53 (1701265553.21224)
+Elapsed time for command: 00:00:02 (2.07598304748535)
+Benchmark Times:
+  Run Start:    2023-11-29 13:45:10 (1701265510)
+  Run Stop:     2023-11-29 13:45:50 (1701265550)
+  Run Elapsed:  00:00:40 (40)
+  Run Reported: 00:00:39 (39 910448000 39.910448)
+ Success 607.cactuBSSN_s peak test ratio=-0.00, runtime=39.910448, copies=1, threads=4, power=0.00W, temp=0.00 degC, humidity=0.00%
+Success: 2x607.cactuBSSN_s
+Producing Raw Reports
+ label: clang17-riscv64-64
+  workload: test
+   benchset: intspeed
+   benchset: intrate
+   benchset: fpspeed
+   metric: SPECspeed2017_fp_base, SPECspeed2017_fp_peak
+    format: raw -> /home/sipeed/spec2017/result/CPU2017.020.fpspeed.test.rsf
+Parsing flags for 607.cactuBSSN_s base: done
+Parsing flags for 607.cactuBSSN_s peak: done
+Doing flag reduction: done
+    format: flags -> /home/sipeed/spec2017/result/CPU2017.020.fpspeed.test.flags.html
+    format: cfg -> /home/sipeed/spec2017/result/CPU2017.020.fpspeed.test.cfg
+    format: CSV -> /home/sipeed/spec2017/result/CPU2017.020.fpspeed.test.csv
+    format: PDF -> /home/sipeed/spec2017/result/CPU2017.020.fpspeed.test.pdf
+    format: HTML -> /home/sipeed/spec2017/result/CPU2017.020.fpspeed.test.html
+    format: Text -> /home/sipeed/spec2017/result/CPU2017.020.fpspeed.test.txt
+   benchset: fprate
+runcpu finished at 2023-11-29 13:46:45; 149 total seconds elapsed
+Info: file_tail(285516): file '/home/sipeed/spec2017/tmp/CPU2017.020/templogs/preenv.fpspeed.020.0.debug' was removed and will no longer be followed.  No action is required.
+The log for this run is in /home/sipeed/spec2017/result/CPU2017.020.log
+
+runcpu finished at 2023-11-29 13:46:46; 153 total seconds elapsed

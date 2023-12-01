@@ -1,0 +1,328 @@
+##############################################################################
+#   INVALID RUN -- INVALID RUN -- INVALID RUN -- INVALID RUN -- INVALID RUN  #
+#                                                                            #
+# 'reportable' flag not set during run                                       #
+# 654.roms_s (base) did not have enough runs!                                #
+# 619.lbm_s (base) did not have enough runs!                                 #
+# 638.imagick_s (base) did not have enough runs!                             #
+# 627.cam4_s (base) did not have enough runs!                                #
+# 607.cactuBSSN_s (base) did not have enough runs!                           #
+# 621.wrf_s (base) did not have enough runs!                                 #
+# 628.pop2_s (base) did not have enough runs!                                #
+# 644.nab_s (base) did not have enough runs!                                 #
+# 603.bwaves_s (base) did not have enough runs!                              #
+# 649.fotonik3d_s (base) did not have enough runs!                           #
+# 654.roms_s (base) had invalid runs!                                        #
+# 621.wrf_s (base) had invalid runs!                                         #
+# 628.pop2_s (base) had invalid runs!                                        #
+# 654.roms_s (peak) did not have enough runs!                                #
+# 619.lbm_s (peak) did not have enough runs!                                 #
+# 638.imagick_s (peak) did not have enough runs!                             #
+# 627.cam4_s (peak) did not have enough runs!                                #
+# 607.cactuBSSN_s (peak) did not have enough runs!                           #
+# 621.wrf_s (peak) did not have enough runs!                                 #
+# 628.pop2_s (peak) did not have enough runs!                                #
+# 644.nab_s (peak) did not have enough runs!                                 #
+# 603.bwaves_s (peak) did not have enough runs!                              #
+# 649.fotonik3d_s (peak) did not have enough runs!                           #
+# 621.wrf_s (peak) had invalid runs!                                         #
+# Input set must be 'refspeed' for a valid run (set to 'test' for this run)  #
+# Run of 621.wrf_s (base) was not valid; status is CE                        #
+# Run of 621.wrf_s (peak) was not valid; status is CE                        #
+# Run of 628.pop2_s (base) was not valid; status is CE                       #
+# Run of 654.roms_s (base) was not valid; status is CE                       #
+# Unknown flags were used! See                                               #
+#      https://www.spec.org/cpu2017/Docs/runcpu.html#flagsurl                #
+# for information about how to get rid of this error.                        #
+# Error 621.wrf_s: Error with make!                                          #
+# Error 621.wrf_s: Error with make!                                          #
+# Error 628.pop2_s: Error with make!                                         #
+# Error 654.roms_s: Error with make!                                         #
+#                                                                            #
+#   INVALID RUN -- INVALID RUN -- INVALID RUN -- INVALID RUN -- INVALID RUN  #
+##############################################################################
+                        SPEC(R) CPU2017 Floating Point Speed Result
+                                     sipeed Licheepi 4a
+                                     Test Sponsor: PLCT
+
+        CPU2017 License: 0                                       Test date: Nov-2023
+        Test sponsor: PLCT                           Hardware availability: May-2023
+        Tested by:    PLCT                           Software availability: Nov-2023
+
+                       Estimated                       Estimated
+                 Base     Base        Base        Peak     Peak        Peak
+Benchmarks      Threads  Run Time     Ratio      Threads  Run Time     Ratio
+--------------- -------  ---------  ---------    -------  ---------  ---------
+603.bwaves_s                                  NR                               NR
+607.cactuBSSN_s                               NR                               NR
+619.lbm_s                                     NR                               NR
+621.wrf_s             1         --            CE       1         --            CE
+627.cam4_s                                    NR                               NR
+628.pop2_s            1         --            CE                               NR
+638.imagick_s                                 NR                               NR
+644.nab_s                                     NR                               NR
+649.fotonik3d_s       4       41.1         --  S       4       39.9         --  S
+654.roms_s            1         --            CE       4       21.9         --  S
+=================================================================================
+603.bwaves_s                                  NR                               NR
+607.cactuBSSN_s                               NR                               NR
+619.lbm_s                                     NR                               NR
+621.wrf_s                                     NR                               NR
+627.cam4_s                                    NR                               NR
+628.pop2_s                                    NR                               NR
+638.imagick_s                                 NR                               NR
+644.nab_s                                     NR                               NR
+649.fotonik3d_s                               NR                               NR
+654.roms_s                                    NR                               NR
+ Est. SPECspeed2017_fp_base              0.00
+ Est. SPECspeed2017_fp_peak                                               0.00
+
+
+                                          HARDWARE
+                                          --------
+            CPU Name: TH1520
+            Max MHz.: 2000MHz
+             Nominal: 2000MHz
+             Enabled: 4 cores, 1 chip
+           Orderable: --
+            Cache L1: 64 KB I +  64 Kb D on chip per core
+                  L2: 1MB L2 Cache for all core
+                  L3: None
+               Other: None
+              Memory: 15.370 GB fixme: If using DDR4, the format is:
+                      'N GB (N x N GB nRxn PC4-nnnnX-X)'
+             Storage: 115 GB  add more disk info here
+               Other: None
+
+
+                                          SOFTWARE
+                                          --------
+                  OS: Debian GNU/Linux 12 (bookworm)
+                      5.10.113+
+            Compiler: Debian clang version 17.0.0 (+rc4-1~exp5revyos1)
+            Parallel: Yes
+            Firmware: Nov-2022
+         File System: ext4
+        System State: Run level 5 (add definition here)
+       Base Pointers: 64-bit
+       Peak Pointers: 64-bit
+               Other: None
+
+
+                                       General Notes
+                                       -------------
+    Environment variables set by runcpu before the start of the run:
+    LD_LIBRARY_PATH = "/usr/lib64/:/usr/lib/:/lib64"
+    OMP_STACKSIZE = "120M"
+    
+
+                                       Platform Notes
+                                       --------------
+     Sysinfo program /home/sipeed/spec2017/bin/sysinfo
+     Rev: r5974 of 2018-05-19 9bcde8f2999c33d61f64985e45859ea9
+     running on lpi4a Wed Nov 29 15:37:40 2023
+    
+     SUT (System Under Test) info as seen by some common utilities.
+     For more information on this section, see
+        https://www.spec.org/cpu2017/Docs/config.html#sysinfo
+    
+     From /proc/cpuinfo
+     *
+     * Did not identify cpu model.  If you would
+     * like to write your own sysinfo program, see
+     * www.spec.org/cpu2017/config.html#sysinfo
+     *
+     *
+     * 0 "physical id" tags found.  Perhaps this is an older system,
+     * or a virtualized system.  Not attempting to guess how to
+     * count chips/cores for this system.
+     *
+           4 "processors"
+        cores, siblings (Caution: counting these is hw and system dependent. The following
+        excerpts from /proc/cpuinfo might not be reliable.  Use with caution.)
+    
+     From lscpu:
+          Architecture:        riscv64
+          Byte Order:          Little Endian
+          CPU(s):              4
+          On-line CPU(s) list: 0-3
+    
+     /proc/cpuinfo cache data
+        cpu-cacheline : 64Bytes
+        cpu-dcache : 64KB
+        cpu-icache : 64KB
+        cpu-l2cache : 1MB
+    
+     From numactl --hardware  WARNING: a numactl 'node' might or might not correspond to a
+     physical chip.
+    
+     From /proc/meminfo
+        MemTotal:       16116952 kB
+        HugePages_Total:       0
+        Hugepagesize:       2048 kB
+    
+     /usr/bin/lsb_release -d
+        Debian GNU/Linux 12 (bookworm)
+    
+     From /etc/*release* /etc/*version*
+        debian_version: 12.0
+        os-release:
+           PRETTY_NAME="Debian GNU/Linux 12 (bookworm)"
+           NAME="Debian GNU/Linux"
+           VERSION_ID="12"
+           VERSION="12 (bookworm)"
+           VERSION_CODENAME=bookworm
+           ID=debian
+           HOME_URL="https://www.debian.org/"
+           SUPPORT_URL="https://www.debian.org/support"
+        revyos-release:
+           BUILD_ID=20231009_134626
+           BUILD_DATE=20231009
+           COMMIT_ID=f9867c522485046f1965a3101bd4545520803623
+           RUNNER_ID=6457521686
+    
+     uname -a:
+        Linux lpi4a 5.10.113+ #4 SMP PREEMPT Fri Oct 20 06:59:14 UTC 2023 riscv64 GNU/Linux
+    
+     run-level 5 Nov 28 13:15
+    
+     SPEC is set to: /home/sipeed/spec2017
+        Filesystem     Type  Size  Used Avail Use% Mounted on
+        /dev/root      ext4  115G   12G   98G  11% /
+    
+     Additional information from dmidecode follows.  WARNING: Use caution when you interpret
+     this section. The 'dmidecode' program reads system data which is "intended to allow
+     hardware to be accurately determined", but the intent may not be met, as there are
+     frequent changes to hardware, firmware, and the "DMTF SMBIOS" standard.
+    
+     (End of data from sysinfo program)
+
+                                   Compiler Version Notes
+                                   ----------------------
+    ==============================================================================
+     FC  649.fotonik3d_s(base, peak) 654.roms_s(peak)
+
+    ------------------------------------------------------------------------------
+    Debian flang-new version 17.0.0 (+rc4-1~exp5revyos1)
+    Target: riscv64-unknown-linux-gnu
+    Thread model: posix
+    InstalledDir: /usr/lib/llvm-17/bin
+    ------------------------------------------------------------------------------
+
+                                     Base Unknown Flags
+                                     ------------------
+ 649.fotonik3d_s: "/usr/bin/flang-new-17" (in FC)
+                  "/usr/bin/flang-new-17" (in LD) "-g -O3" (in OPTIMIZE)
+
+
+                                     Peak Unknown Flags
+                                     ------------------
+ 649.fotonik3d_s: "/usr/bin/flang-new-17" (in FC)
+                  "/usr/bin/flang-new-17" (in LD) "-g -Ofast" (in OPTIMIZE)
+
+      654.roms_s: "/usr/bin/flang-new-17" (in FC)
+                  "/usr/bin/flang-new-17" (in LD) "-g -Ofast" (in OPTIMIZE)
+                  "-fopenmp" (in EXTRA_OPTIMIZE)
+
+
+                                  Base Runtime Environment
+                                  ------------------------
+Fortran benchmarks:
+
+ 649.fotonik3d_s: No flags used
+
+
+                                  Base Compiler Invocation
+                                  ------------------------
+Fortran benchmarks:
+
+ 649.fotonik3d_s: No flags used
+
+
+                                   Base Portability Flags
+                                   ----------------------
+ 649.fotonik3d_s: -DSPEC_LP64
+
+
+                                  Base Optimization Flags
+                                  -----------------------
+Fortran benchmarks:
+
+ 649.fotonik3d_s: -DSPEC_OPENMP -DUSE_OPENMP
+
+
+                                      Base Other Flags
+                                      ----------------
+Fortran benchmarks:
+
+ 649.fotonik3d_s: No flags used
+
+
+                                   Peak Portability Flags
+                                   ----------------------
+ 649.fotonik3d_s: -DSPEC_LP64
+      654.roms_s: -DSPEC_LP64
+
+
+                                  Peak Optimization Flags
+                                  -----------------------
+Fortran benchmarks:
+
+ 649.fotonik3d_s: -DSPEC_OPENMP -DUSE_OPENMP
+
+      654.roms_s: No flags used
+
+
+  SPEC is a registered trademark of the Standard Performance Evaluation
+    Corporation.  All other brand and product names appearing in this
+    result are trademarks or registered trademarks of their respective
+    holders.
+##############################################################################
+#   INVALID RUN -- INVALID RUN -- INVALID RUN -- INVALID RUN -- INVALID RUN  #
+#                                                                            #
+# 'reportable' flag not set during run                                       #
+# 654.roms_s (base) did not have enough runs!                                #
+# 619.lbm_s (base) did not have enough runs!                                 #
+# 638.imagick_s (base) did not have enough runs!                             #
+# 627.cam4_s (base) did not have enough runs!                                #
+# 607.cactuBSSN_s (base) did not have enough runs!                           #
+# 621.wrf_s (base) did not have enough runs!                                 #
+# 628.pop2_s (base) did not have enough runs!                                #
+# 644.nab_s (base) did not have enough runs!                                 #
+# 603.bwaves_s (base) did not have enough runs!                              #
+# 649.fotonik3d_s (base) did not have enough runs!                           #
+# 654.roms_s (base) had invalid runs!                                        #
+# 621.wrf_s (base) had invalid runs!                                         #
+# 628.pop2_s (base) had invalid runs!                                        #
+# 654.roms_s (peak) did not have enough runs!                                #
+# 619.lbm_s (peak) did not have enough runs!                                 #
+# 638.imagick_s (peak) did not have enough runs!                             #
+# 627.cam4_s (peak) did not have enough runs!                                #
+# 607.cactuBSSN_s (peak) did not have enough runs!                           #
+# 621.wrf_s (peak) did not have enough runs!                                 #
+# 628.pop2_s (peak) did not have enough runs!                                #
+# 644.nab_s (peak) did not have enough runs!                                 #
+# 603.bwaves_s (peak) did not have enough runs!                              #
+# 649.fotonik3d_s (peak) did not have enough runs!                           #
+# 621.wrf_s (peak) had invalid runs!                                         #
+# Input set must be 'refspeed' for a valid run (set to 'test' for this run)  #
+# Run of 621.wrf_s (base) was not valid; status is CE                        #
+# Run of 621.wrf_s (peak) was not valid; status is CE                        #
+# Run of 628.pop2_s (base) was not valid; status is CE                       #
+# Run of 654.roms_s (base) was not valid; status is CE                       #
+# Unknown flags were used! See                                               #
+#      https://www.spec.org/cpu2017/Docs/runcpu.html#flagsurl                #
+# for information about how to get rid of this error.                        #
+# Error 621.wrf_s: Error with make!                                          #
+# Error 621.wrf_s: Error with make!                                          #
+# Error 628.pop2_s: Error with make!                                         #
+# Error 654.roms_s: Error with make!                                         #
+#                                                                            #
+#   INVALID RUN -- INVALID RUN -- INVALID RUN -- INVALID RUN -- INVALID RUN  #
+##############################################################################
+--------------------------------------------------------------------------------------------
+For questions about this result, please contact the tester.
+For other inquiries, please contact info@spec.org.
+Copyright 2017-2023 Standard Performance Evaluation Corporation
+Tested with SPEC CPU2017 v1.0.5 on 2023-11-29 15:37:37+0000.
+Report generated on 2023-11-30 03:16:51 by CPU2017 ASCII formatter v5942.

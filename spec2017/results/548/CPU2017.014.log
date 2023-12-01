@@ -1,0 +1,1050 @@
+runcpu v5825 started at 2023-11-29 12:59:45 on "lpi4a"
+runcpu is: /home/sipeed/spec2017/bin/harness/runcpu
+runcpu: runcpu --config=llvm-test.cfg --size=test 548.exchange2_r
+toolset: linux-riscv64
+
+Locating benchmarks...found 47 benchmarks in 53 benchsets.
+Reading config file '/home/sipeed/spec2017/config/llvm-test.cfg'
+
+1 configuration selected:
+
+ Action    Run Mode   Workload     Report Type      Benchmarks
+--------   --------   --------   ----------------   ---------------------------
+validate   rate       test       SPECrate2017_int   548.exchange2_r            
+-------------------------------------------------------------------------------
+
+Setting up environment for running 548.exchange2_r...
+Starting runcpu for 548.exchange2_r...
+Running "specperl /home/sipeed/spec2017/bin/sysinfo" to gather system information.
+sysinfo: r5974 of 2018-05-19 (9bcde8f2999c33d61f64985e45859ea9)
+sysinfo: Getting system information for Linux...
+sysinfo: ...getting CPU info
+sysinfo: ...getting info from numactl
+sysinfo: ...getting memory info
+sysinfo: ...getting OS info
+sysinfo: ...getting disk info
+sysinfo: ...trying to get DIMM info from dmidecode
+Read 88 info lines from the sysinfo program.
+Retrieving flags file (/home/sipeed/spec2017/config/flags/clang.xml)...
+Verbosity = 5
+Action    = validate
+Tune      = base,peak
+Label     = clang17-riscv64-64
+Size      = test
+benchmarks= 548.exchange2_r
+outputs   = txt,html,cfg,pdf,csv
+username  = sipeed
+Environment settings:
+LD_LIBRARY_PATH = "%{gcc_dir}/lib64/:%{gcc_dir}/lib/:/lib64"
+
+Benchmarks selected: 548.exchange2_r
+When checking executables (/home/sipeed/spec2017/benchspec/CPU/548.exchange2_r/exe/exchange2_r_base.clang17-riscv64-64), no checksums were
+  found in the config file.  They will be installed after build.
+When checking executables (/home/sipeed/spec2017/benchspec/CPU/548.exchange2_r/exe/exchange2_r_peak.clang17-riscv64-64), no checksums were
+  found in the config file.  They will be installed after build.
+When checking executables (/home/sipeed/spec2017/benchspec/CPU/548.exchange2_r/exe/exchange2_r_base.clang17-riscv64-64), no checksums were
+  found in the config file.  They will be installed after build.
+When checking executables (/home/sipeed/spec2017/benchspec/CPU/548.exchange2_r/exe/exchange2_r_peak.clang17-riscv64-64), no checksums were
+  found in the config file.  They will be installed after build.
+Compiling Binaries
+------------------------------------------------------------------------
+When checking options for /home/sipeed/spec2017/benchspec/CPU/548.exchange2_r/exe/exchange2_r_base.clang17-riscv64-64, no checksums were
+  found in the config file.  They will be installed after build.
+When checking executables (/home/sipeed/spec2017/benchspec/CPU/548.exchange2_r/exe/exchange2_r_base.clang17-riscv64-64), no checksums were
+  found in the config file.  They will be installed after build.
+  Building 548.exchange2_r base clang17-riscv64-64: (build_base_clang17-riscv64-64.0000) [2023-11-29 12:59:54]
+Wrote to makefile '/home/sipeed/spec2017/benchspec/CPU/548.exchange2_r/build/build_base_clang17-riscv64-64.0000/Makefile.deps':
+# End dependencies
+# These are the build dependencies
+Wrote to makefile '/home/sipeed/spec2017/benchspec/CPU/548.exchange2_r/build/build_base_clang17-riscv64-64.0000/Makefile.spec':
+TUNE=base
+LABEL=clang17-riscv64-64
+NUMBER=548
+NAME=exchange2_r
+SOURCES= exchange2.F90
+EXEBASE=exchange2_r
+NEED_MATH=
+BENCHLANG=F
+BENCH_FLAGS      = -DSPEC_AUTO_SUPPRESS_OPENMP
+CC               = $(SPECLANG)clang-17   -Wno-implicit-int   $(model)
+CC_VERSION_OPTION = --version
+CXX              = $(SPECLANG)clang++-17     -std=c++98    $(model)
+CXX_VERSION_OPTION = --version
+EXTRA_COPTIMIZE  = -fgnu89-inline  -fno-strict-aliasing -fno-unsafe-math-optimizations -fno-finite-math-only -fcommon
+EXTRA_PORTABILITY = -DSPEC_LP64
+FC               = $(SPECLANG)flang-new-17    $(model)
+FC_VERSION_OPTION = --version
+OPTIMIZE         = -g -O3
+OS               = unix
+SPECLANG         = /usr/bin/
+absolutely_no_locking = 0
+abstol           = 
+action           = validate
+allow_label_override = 0
+backup_config    = 1
+baseexe          = exchange2_r
+basepeak         = 0
+benchdir         = benchspec
+benchmark        = 548.exchange2_r
+binary           = 
+bindir           = exe
+builddir         = build
+bundleaction     = 
+bundlename       = 
+calctol          = 1
+changedhash      = 0
+check_version    = 0
+clean_between_builds = no
+command_add_redirect = 1
+commanderrfile   = speccmds.err
+commandexe       = exchange2_r_base.clang17-riscv64-64
+commandfile      = speccmds.cmd
+commandoutfile   = speccmds.out
+commandstdoutfile = speccmds.stdout
+comparedir       = compare
+compareerrfile   = compare.err
+comparefile      = compare.cmd
+compareoutfile   = compare.out
+comparestdoutfile = compare.stdout
+compile_error    = 0
+compwhite        = 
+configdir        = config
+configfile       = llvm-test.cfg
+configpath       = /home/sipeed/spec2017/config/llvm-test.cfg
+copies           = 4
+current_range    = 
+datadir          = data
+default_size     = ref
+default_submit   = $command
+delay            = 0
+deletebinaries   = 0
+deletework       = 0
+dependent_workloads = 0
+device           = 
+difflines        = 10
+dirprot          = 511
+discard_power_samples = 0
+enable_monitor   = 1
+endian           = 12345678
+env_vars         = 0
+expand_notes     = 0
+expid            = 
+exthash_bits     = 256
+failflags        = 0
+fake             = 0
+feedback         = 1
+flag_url_base    = https://www.spec.org/auto/cpu2017/Docs/benchmarks/flags/
+floatcompare     = 
+force_monitor    = 0
+from_runcpu      = 2
+fw_bios          = Nov-2022
+hostname         = lpi4a
+http_proxy       = 
+http_timeout     = 30
+hw_avail         = May-2023
+hw_cpu_max_mhz   = 2000MHz
+hw_cpu_name      = TH1520
+hw_cpu_nominal_mhz = 2000MHz
+hw_disk          = 115 GB  add more disk info here
+hw_memory001     = 15.370 GB fixme: If using DDR4, the format is:
+hw_memory002     = 'N GB (N x N GB nRxn PC4-nnnnX-X)'
+hw_model         = Licheepi 4a
+hw_nchips        = 1
+hw_ncores        = 4
+hw_nthreadspercore = 1
+hw_ocache        = None
+hw_other         = None
+hw_pcache        = 64 KB I +  64 Kb D on chip per core
+hw_scache        = 1MB L2 Cache for all core
+hw_tcache        = None
+hw_vendor        = sipeed
+idle_current_range = 
+idledelay        = 10
+idleduration     = 60
+ignore_errors    = 1
+ignore_sigint    = 0
+ignorecase       = 
+info_wrap_columns = 50
+inputdir         = input
+inputgenerrfile  = inputgen.err
+inputgenfile     = inputgen.cmd
+inputgenoutfile  = inputgen.out
+inputgenstdoutfile = inputgen.stdout
+iteration        = -1
+iterations       = 1
+keeptmp          = 0
+label            = clang17-riscv64-64
+license_num      = 0
+line_width       = 1020
+link_input_files = 1
+locking          = 1
+log              = CPU2017
+log_line_width   = 1020
+log_timestamp    = 0
+logfile          = /home/sipeed/spec2017/tmp/CPU2017.014/templogs/preenv.intrate.014.0
+logname          = /home/sipeed/spec2017/tmp/CPU2017.014/templogs/preenv.intrate.014.0
+lognum           = 014.0
+mail_reports     = all
+mailcompress     = 0
+mailmethod       = smtp
+mailport         = 25
+mailserver       = 127.0.0.1
+mailto           = 
+make             = specmake
+make_no_clobber  = 0
+makefile_template = Makefile.YYYtArGeTYYYspec
+makeflags        = --jobs=4
+max_average_uncertainty = 1
+max_hum_limit    = 0
+max_report_runs  = 3
+max_unknown_uncertainty = 1
+mean_anyway      = 1
+meter_connect_timeout = 30
+meter_errors_default = 5
+meter_errors_percentage = 5
+min_report_runs  = 2
+min_temp_limit   = 20
+minimize_builddirs = 0
+minimize_rundirs = 0
+name             = exchange2_r
+nansupport       = 
+need_math        = 
+no_input_handler = close
+no_monitor       = 
+noratios         = 0
+note_preenv      = 1
+notes_plat_sysinfo_000 =  Sysinfo program /home/sipeed/spec2017/bin/sysinfo
+notes_plat_sysinfo_005 =  Rev: r5974 of 2018-05-19 9bcde8f2999c33d61f64985e45859ea9
+notes_plat_sysinfo_010 =  running on lpi4a Wed Nov 29 12:59:53 2023
+notes_plat_sysinfo_015 = 
+notes_plat_sysinfo_020 =  SUT (System Under Test) info as seen by some common utilities.
+notes_plat_sysinfo_025 =  For more information on this section, see
+notes_plat_sysinfo_030 =     https://www.spec.org/cpu2017/Docs/config.html\#sysinfo
+notes_plat_sysinfo_035 = 
+notes_plat_sysinfo_040 =  From /proc/cpuinfo
+notes_plat_sysinfo_045 =  *
+notes_plat_sysinfo_050 =  * Did not identify cpu model.  If you would
+notes_plat_sysinfo_055 =  * like to write your own sysinfo program, see
+notes_plat_sysinfo_060 =  * www.spec.org/cpu2017/config.html\#sysinfo
+notes_plat_sysinfo_065 =  *
+notes_plat_sysinfo_070 =  *
+notes_plat_sysinfo_075 =  * 0 "physical id" tags found.  Perhaps this is an older system,
+notes_plat_sysinfo_080 =  * or a virtualized system.  Not attempting to guess how to
+notes_plat_sysinfo_085 =  * count chips/cores for this system.
+notes_plat_sysinfo_090 =  *
+notes_plat_sysinfo_095 =        4 "processors"
+notes_plat_sysinfo_100 =     cores, siblings (Caution: counting these is hw and system dependent. The following
+notes_plat_sysinfo_105 =     excerpts from /proc/cpuinfo might not be reliable.  Use with caution.)
+notes_plat_sysinfo_110 = 
+notes_plat_sysinfo_115 =  From lscpu:
+notes_plat_sysinfo_120 =       Architecture:        riscv64
+notes_plat_sysinfo_125 =       Byte Order:          Little Endian
+notes_plat_sysinfo_130 =       CPU(s):              4
+notes_plat_sysinfo_135 =       On-line CPU(s) list: 0-3
+notes_plat_sysinfo_140 = 
+notes_plat_sysinfo_145 =  /proc/cpuinfo cache data
+notes_plat_sysinfo_150 =     cpu-cacheline : 64Bytes
+notes_plat_sysinfo_155 =     cpu-dcache : 64KB
+notes_plat_sysinfo_160 =     cpu-icache : 64KB
+notes_plat_sysinfo_165 =     cpu-l2cache : 1MB
+notes_plat_sysinfo_170 = 
+notes_plat_sysinfo_175 =  From numactl --hardware  WARNING: a numactl 'node' might or might not correspond to a
+notes_plat_sysinfo_180 =  physical chip.
+notes_plat_sysinfo_185 = 
+notes_plat_sysinfo_190 =  From /proc/meminfo
+notes_plat_sysinfo_195 =     MemTotal:       16116952 kB
+notes_plat_sysinfo_200 =     HugePages_Total:       0
+notes_plat_sysinfo_205 =     Hugepagesize:       2048 kB
+notes_plat_sysinfo_210 = 
+notes_plat_sysinfo_215 =  /usr/bin/lsb_release -d
+notes_plat_sysinfo_220 =     Debian GNU/Linux 12 (bookworm)
+notes_plat_sysinfo_225 = 
+notes_plat_sysinfo_230 =  From /etc/*release* /etc/*version*
+notes_plat_sysinfo_235 =     debian_version: 12.0
+notes_plat_sysinfo_240 =     os-release:
+notes_plat_sysinfo_245 =        PRETTY_NAME="Debian GNU/Linux 12 (bookworm)"
+notes_plat_sysinfo_250 =        NAME="Debian GNU/Linux"
+notes_plat_sysinfo_255 =        VERSION_ID="12"
+notes_plat_sysinfo_260 =        VERSION="12 (bookworm)"
+notes_plat_sysinfo_265 =        VERSION_CODENAME=bookworm
+notes_plat_sysinfo_270 =        ID=debian
+notes_plat_sysinfo_275 =        HOME_URL="https://www.debian.org/"
+notes_plat_sysinfo_280 =        SUPPORT_URL="https://www.debian.org/support"
+notes_plat_sysinfo_285 =     revyos-release:
+notes_plat_sysinfo_290 =        BUILD_ID=20231009_134626
+notes_plat_sysinfo_295 =        BUILD_DATE=20231009
+notes_plat_sysinfo_300 =        COMMIT_ID=f9867c522485046f1965a3101bd4545520803623
+notes_plat_sysinfo_305 =        RUNNER_ID=6457521686
+notes_plat_sysinfo_310 = 
+notes_plat_sysinfo_315 =  uname -a:
+notes_plat_sysinfo_320 =     Linux lpi4a 5.10.113+ \#4 SMP PREEMPT Fri Oct 20 06:59:14 UTC 2023 riscv64 GNU/Linux
+notes_plat_sysinfo_325 = 
+notes_plat_sysinfo_330 =  run-level 5 Nov 28 13:15
+notes_plat_sysinfo_335 = 
+notes_plat_sysinfo_340 =  SPEC is set to: /home/sipeed/spec2017
+notes_plat_sysinfo_345 =     Filesystem     Type  Size  Used Avail Use% Mounted on
+notes_plat_sysinfo_350 =     /dev/root      ext4  115G   12G   98G  11% /
+notes_plat_sysinfo_355 = 
+notes_plat_sysinfo_360 =  Additional information from dmidecode follows.  WARNING: Use caution when you interpret
+notes_plat_sysinfo_365 =  this section. The 'dmidecode' program reads system data which is "intended to allow
+notes_plat_sysinfo_370 =  hardware to be accurately determined", but the intent may not be met, as there are
+notes_plat_sysinfo_375 =  frequent changes to hardware, firmware, and the "DMTF SMBIOS" standard.
+notes_plat_sysinfo_380 = 
+notes_plat_sysinfo_385 =  (End of data from sysinfo program)
+notes_wrap_columns = 0
+notes_wrap_indent =   
+num              = 548
+obiwan           = 
+os_exe_ext       = 
+output_format    = txt,html,cfg,pdf,csv
+output_root      = 
+outputdir        = output
+parallel_test    = 4
+parallel_test_submit = 0
+parallel_test_workloads = 
+path             = /home/sipeed/spec2017/benchspec/CPU/548.exchange2_r
+plain_train      = 1
+platform         = 
+power            = 0
+preENV_LD_LIBRARY_PATH = %{gcc_dir}/lib64/:%{gcc_dir}/lib/:/lib64
+preenv           = 0
+prefix           = 
+prepared_by      = sipeed  (is never output, only tags rawfile)
+ranks            = 1
+rawhash_bits     = 256
+rebuild          = 0
+reftime          = reftime
+reltol           = 
+reportable       = 0
+resultdir        = result
+review           = 0
+run              = all
+runcpu           = /home/sipeed/spec2017/bin/harness/runcpu --configfile llvm-test.cfg --size test --noreportable --nopower --runmode rate --tune base:peak --size test 548.exchange2_r --nopreenv --note-preenv --logfile /home/sipeed/spec2017/tmp/CPU2017.014/templogs/preenv.intrate.014.0 --lognum 014.0 --from_runcpu 2
+rundir           = run
+runmode          = rate
+safe_eval        = 1
+save_build_files = 
+section_specifier_fatal = 1
+setprocgroup     = 1
+setup_error      = 0
+sigint           = 2
+size             = test
+size_class       = test
+skipabstol       = 
+skipobiwan       = 
+skipreltol       = 
+skiptol          = 
+smarttune        = base
+specdiff         = specdiff
+specrun          = specinvoke
+srcalt           = 
+srcdir           = src
+srcsource        = /home/sipeed/spec2017/benchspec/CPU/548.exchange2_r/src
+stagger          = 10
+strict_rundir_verify = 1
+sw_avail         = Nov-2023
+sw_base_ptrsize  = 64-bit
+sw_compiler001   = Debian clang version 17.0.0 (+rc4-1~exp5revyos1)
+sw_file          = ext4
+sw_os001         = Debian GNU/Linux 12 (bookworm)
+sw_os002         = 5.10.113+
+sw_other         = None
+sw_peak_ptrsize  = 64-bit
+sw_state         = Run level 5 (add definition here)
+sysinfo_hash_bits = 256
+sysinfo_program  = specperl /home/sipeed/spec2017/bin/sysinfo
+sysinfo_program_hash = sysinfo:SHA:32259ebd59f3e93740723202f27c44c82ee68e0f2e40cd2ca50cfd5519772397
+table            = 1
+teeout           = 0
+test_date        = Nov-2023
+test_sponsor     = PLCT
+tester           = PLCT
+threads          = 1
+top              = /home/sipeed/spec2017
+train_single_thread = 0
+train_with       = train
+tune             = base
+uid              = 1001
+unbuffer         = 1
+uncertainty_exception = 5
+update           = 0
+update_url       = http://www.spec.org/auto/cpu2017/updates/
+use_submit_for_compare = 0
+use_submit_for_speed = 0
+username         = sipeed
+verbose          = 5
+verify_binaries  = 1
+version          = 0.905000
+version_url      = http://www.spec.org/auto/cpu2017/current_version
+voltage_range    = 
+worklist         = list
+OUTPUT_RMFILES   = s.txt
+  Compile for '548.exchange2_r' started at: 2023-11-29 12:59:54 (1701262794)
+Issuing make.clean command 'specmake --output-sync --jobs=4 clean'
+Start make.clean command: 2023-11-29 12:59:54 (1701262794.5044)
+rm -rf *.o  s.txt
+find . \( -name \*.o -o -name '*.fppized.f*' -o -name '*.i' -o -name '*.mod' \) -print | xargs rm -rf
+rm -rf exchange2_r
+rm -rf exchange2_r.exe
+rm -rf core
+Stop make.clean command: 2023-11-29 12:59:54 (1701262794.737)
+Elapsed time for make.clean command: 00:00:00 (0.23260498046875)
+Issuing make command 'specmake --output-sync --jobs=4 build'
+Start make command: 2023-11-29 12:59:54 (1701262794.74053)
+/home/sipeed/spec2017/bin/specperl /home/sipeed/spec2017/bin/harness/specpp -DSPEC -DNDEBUG -DSPEC_AUTO_SUPPRESS_OPENMP -DSPEC_LP64 exchange2.F90 -o exchange2.fppized.f90
+/usr/bin/flang-new-17     -c -o exchange2.fppized.o -g -O3 exchange2.fppized.f90
+/usr/bin/flang-new-17          -g -O3          exchange2.fppized.o                      -o exchange2_r  
+Stop make command: 2023-11-29 13:00:51 (1701262851.08256)
+Elapsed time for make command: 00:00:56 (56.3420209884644)
+Issuing options command 'specmake --output-sync --jobs=4 options'
+Start options command: 2023-11-29 13:00:51 (1701262851.0859)
+FPP: "specpp -DSPEC -DNDEBUG -DSPEC_AUTO_SUPPRESS_OPENMP -DSPEC_LP64 <source> -o <source>.fppized.f9x"
+P: CPUFLAGS="-DSPEC -DNDEBUG"
+P: BENCH_FLAGS="-DSPEC_AUTO_SUPPRESS_OPENMP"
+O: OPTIMIZE=""
+O: EXTRA_OPTIMIZE=""
+O: FPPOPTIMIZE=""
+O: EXTRA_FPPOPTIMIZE=""
+O: FOPTIMIZE=""
+O: EXTRA_FOPTIMIZE=""
+P: PORTABILITY=""
+P: EXTRA_PORTABILITY="-DSPEC_LP64"
+P: FPORTABILITY=""
+P: EXTRA_FPORTABILITY=""
+COMP: "/usr/bin/flang-new-17     -c -o options.o -g -O3 <source>"
+C: FC="/usr/bin/flang-new-17    "
+C: FOBJOPT="-c -o options"
+P: CPUFLAGS="-DSPEC -DNDEBUG"
+P: BENCH_FLAGS="-DSPEC_AUTO_SUPPRESS_OPENMP"
+P: BENCH_FFLAGS=""
+O: OPTIMIZE="-g -O3"
+O: FOPTIMIZE=""
+P: PORTABILITY=""
+P: FPORTABILITY=""
+O: EXTRA_FFLAGS=""
+O: EXTRA_OPTIMIZE=""
+O: EXTRA_FOPTIMIZE=""
+P: EXTRA_PORTABILITY="-DSPEC_LP64"
+P: EXTRA_FPORTABILITY=""
+LINK: "/usr/bin/flang-new-17          -g -O3          <objects>            -o options  "
+C: LD="/usr/bin/flang-new-17    "
+O: OPTIMIZE="-g -O3"
+C: LDOUT="-o options"
+Stop options command: 2023-11-29 13:00:51 (1701262851.3075)
+Elapsed time for options command: 00:00:00 (0.221601963043213)
+Issuing compiler-version command 'specmake --output-sync --jobs=4 compiler-version'
+Start compiler-version command: 2023-11-29 13:00:51 (1701262851.31284)
+ FC_VERSION_OPTION:
+Debian flang-new version 17.0.0 (+rc4-1~exp5revyos1)
+Target: riscv64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /usr/lib/llvm-17/bin
+Stop compiler-version command: 2023-11-29 13:00:51 (1701262851.63724)
+Elapsed time for compiler-version command: 00:00:00 (0.324403047561646)
+  Compile for '548.exchange2_r' ended at: 2023-11-29 13:00:51 (1701262851)
+  Elapsed compile for '548.exchange2_r': 00:00:57 (57)
+FPP: "specpp -DSPEC -DNDEBUG -DSPEC_AUTO_SUPPRESS_OPENMP -DSPEC_LP64 <source> -o <source>.fppized.f9x"
+P: CPUFLAGS="-DSPEC -DNDEBUG"
+P: BENCH_FLAGS="-DSPEC_AUTO_SUPPRESS_OPENMP"
+O: OPTIMIZE=""
+O: EXTRA_OPTIMIZE=""
+O: FPPOPTIMIZE=""
+O: EXTRA_FPPOPTIMIZE=""
+O: FOPTIMIZE=""
+O: EXTRA_FOPTIMIZE=""
+P: PORTABILITY=""
+P: EXTRA_PORTABILITY="-DSPEC_LP64"
+P: FPORTABILITY=""
+P: EXTRA_FPORTABILITY=""
+COMP: "/usr/bin/flang-new-17     -c -o options.o -g -O3 <source>"
+C: FC="/usr/bin/flang-new-17    "
+C: FOBJOPT="-c -o options"
+P: CPUFLAGS="-DSPEC -DNDEBUG"
+P: BENCH_FLAGS="-DSPEC_AUTO_SUPPRESS_OPENMP"
+P: BENCH_FFLAGS=""
+O: OPTIMIZE="-g -O3"
+O: FOPTIMIZE=""
+P: PORTABILITY=""
+P: FPORTABILITY=""
+O: EXTRA_FFLAGS=""
+O: EXTRA_OPTIMIZE=""
+O: EXTRA_FOPTIMIZE=""
+P: EXTRA_PORTABILITY="-DSPEC_LP64"
+P: EXTRA_FPORTABILITY=""
+LINK: "/usr/bin/flang-new-17          -g -O3          <objects>            -o options  "
+C: LD="/usr/bin/flang-new-17    "
+O: OPTIMIZE="-g -O3"
+C: LDOUT="-o options"
+ FC_VERSION_OPTION:
+Debian flang-new version 17.0.0 (+rc4-1~exp5revyos1)
+Target: riscv64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /usr/lib/llvm-17/bin
+------------------------------------------------------------------------
+When checking options for /home/sipeed/spec2017/benchspec/CPU/548.exchange2_r/exe/exchange2_r_peak.clang17-riscv64-64, no checksums were
+  found in the config file.  They will be installed after build.
+When checking executables (/home/sipeed/spec2017/benchspec/CPU/548.exchange2_r/exe/exchange2_r_peak.clang17-riscv64-64), no checksums were
+  found in the config file.  They will be installed after build.
+  Building 548.exchange2_r peak clang17-riscv64-64: (build_peak_clang17-riscv64-64.0000) [2023-11-29 13:00:52]
+Wrote to makefile '/home/sipeed/spec2017/benchspec/CPU/548.exchange2_r/build/build_peak_clang17-riscv64-64.0000/Makefile.deps':
+# End dependencies
+# These are the build dependencies
+Wrote to makefile '/home/sipeed/spec2017/benchspec/CPU/548.exchange2_r/build/build_peak_clang17-riscv64-64.0000/Makefile.spec':
+TUNE=peak
+LABEL=clang17-riscv64-64
+NUMBER=548
+NAME=exchange2_r
+SOURCES= exchange2.F90
+EXEBASE=exchange2_r
+NEED_MATH=
+BENCHLANG=F
+BENCH_FLAGS      = -DSPEC_AUTO_SUPPRESS_OPENMP
+CC               = $(SPECLANG)clang-17   -Wno-implicit-int   $(model)
+CC_VERSION_OPTION = --version
+CXX              = $(SPECLANG)clang++-17     -std=c++98    $(model)
+CXX_VERSION_OPTION = --version
+EXTRA_PORTABILITY = -DSPEC_LP64
+FC               = $(SPECLANG)flang-new-17    $(model)
+FC_VERSION_OPTION = --version
+OPTIMIZE         = -g -Ofast
+OS               = unix
+SPECLANG         = /usr/bin/
+absolutely_no_locking = 0
+abstol           = 
+action           = validate
+allow_label_override = 0
+backup_config    = 1
+baseexe          = exchange2_r
+basepeak         = 0
+benchdir         = benchspec
+benchmark        = 548.exchange2_r
+binary           = 
+bindir           = exe
+builddir         = build
+bundleaction     = 
+bundlename       = 
+calctol          = 1
+changedhash      = 0
+check_version    = 0
+clean_between_builds = no
+command_add_redirect = 1
+commanderrfile   = speccmds.err
+commandexe       = exchange2_r_peak.clang17-riscv64-64
+commandfile      = speccmds.cmd
+commandoutfile   = speccmds.out
+commandstdoutfile = speccmds.stdout
+comparedir       = compare
+compareerrfile   = compare.err
+comparefile      = compare.cmd
+compareoutfile   = compare.out
+comparestdoutfile = compare.stdout
+compile_error    = 0
+compwhite        = 
+configdir        = config
+configfile       = llvm-test.cfg
+configpath       = /home/sipeed/spec2017/config/llvm-test.cfg
+copies           = 4
+current_range    = 
+datadir          = data
+default_size     = ref
+default_submit   = $command
+delay            = 0
+deletebinaries   = 0
+deletework       = 0
+dependent_workloads = 0
+device           = 
+difflines        = 10
+dirprot          = 511
+discard_power_samples = 0
+enable_monitor   = 1
+endian           = 12345678
+env_vars         = 0
+expand_notes     = 0
+expid            = 
+exthash_bits     = 256
+failflags        = 0
+fake             = 0
+feedback         = 1
+flag_url_base    = https://www.spec.org/auto/cpu2017/Docs/benchmarks/flags/
+floatcompare     = 
+force_monitor    = 0
+from_runcpu      = 2
+fw_bios          = Nov-2022
+hostname         = lpi4a
+http_proxy       = 
+http_timeout     = 30
+hw_avail         = May-2023
+hw_cpu_max_mhz   = 2000MHz
+hw_cpu_name      = TH1520
+hw_cpu_nominal_mhz = 2000MHz
+hw_disk          = 115 GB  add more disk info here
+hw_memory001     = 15.370 GB fixme: If using DDR4, the format is:
+hw_memory002     = 'N GB (N x N GB nRxn PC4-nnnnX-X)'
+hw_model         = Licheepi 4a
+hw_nchips        = 1
+hw_ncores        = 4
+hw_nthreadspercore = 1
+hw_ocache        = None
+hw_other         = None
+hw_pcache        = 64 KB I +  64 Kb D on chip per core
+hw_scache        = 1MB L2 Cache for all core
+hw_tcache        = None
+hw_vendor        = sipeed
+idle_current_range = 
+idledelay        = 10
+idleduration     = 60
+ignore_errors    = 1
+ignore_sigint    = 0
+ignorecase       = 
+info_wrap_columns = 50
+inputdir         = input
+inputgenerrfile  = inputgen.err
+inputgenfile     = inputgen.cmd
+inputgenoutfile  = inputgen.out
+inputgenstdoutfile = inputgen.stdout
+iteration        = -1
+iterations       = 1
+keeptmp          = 0
+label            = clang17-riscv64-64
+license_num      = 0
+line_width       = 1020
+link_input_files = 1
+locking          = 1
+log              = CPU2017
+log_line_width   = 1020
+log_timestamp    = 0
+logfile          = /home/sipeed/spec2017/tmp/CPU2017.014/templogs/preenv.intrate.014.0
+logname          = /home/sipeed/spec2017/tmp/CPU2017.014/templogs/preenv.intrate.014.0
+lognum           = 014.0
+mail_reports     = all
+mailcompress     = 0
+mailmethod       = smtp
+mailport         = 25
+mailserver       = 127.0.0.1
+mailto           = 
+make             = specmake
+make_no_clobber  = 0
+makefile_template = Makefile.YYYtArGeTYYYspec
+makeflags        = --jobs=4
+max_average_uncertainty = 1
+max_hum_limit    = 0
+max_report_runs  = 3
+max_unknown_uncertainty = 1
+mean_anyway      = 1
+meter_connect_timeout = 30
+meter_errors_default = 5
+meter_errors_percentage = 5
+min_report_runs  = 2
+min_temp_limit   = 20
+minimize_builddirs = 0
+minimize_rundirs = 0
+name             = exchange2_r
+nansupport       = 
+need_math        = 
+no_input_handler = close
+no_monitor       = 
+noratios         = 0
+note_preenv      = 1
+notes_plat_sysinfo_000 =  Sysinfo program /home/sipeed/spec2017/bin/sysinfo
+notes_plat_sysinfo_005 =  Rev: r5974 of 2018-05-19 9bcde8f2999c33d61f64985e45859ea9
+notes_plat_sysinfo_010 =  running on lpi4a Wed Nov 29 12:59:53 2023
+notes_plat_sysinfo_015 = 
+notes_plat_sysinfo_020 =  SUT (System Under Test) info as seen by some common utilities.
+notes_plat_sysinfo_025 =  For more information on this section, see
+notes_plat_sysinfo_030 =     https://www.spec.org/cpu2017/Docs/config.html\#sysinfo
+notes_plat_sysinfo_035 = 
+notes_plat_sysinfo_040 =  From /proc/cpuinfo
+notes_plat_sysinfo_045 =  *
+notes_plat_sysinfo_050 =  * Did not identify cpu model.  If you would
+notes_plat_sysinfo_055 =  * like to write your own sysinfo program, see
+notes_plat_sysinfo_060 =  * www.spec.org/cpu2017/config.html\#sysinfo
+notes_plat_sysinfo_065 =  *
+notes_plat_sysinfo_070 =  *
+notes_plat_sysinfo_075 =  * 0 "physical id" tags found.  Perhaps this is an older system,
+notes_plat_sysinfo_080 =  * or a virtualized system.  Not attempting to guess how to
+notes_plat_sysinfo_085 =  * count chips/cores for this system.
+notes_plat_sysinfo_090 =  *
+notes_plat_sysinfo_095 =        4 "processors"
+notes_plat_sysinfo_100 =     cores, siblings (Caution: counting these is hw and system dependent. The following
+notes_plat_sysinfo_105 =     excerpts from /proc/cpuinfo might not be reliable.  Use with caution.)
+notes_plat_sysinfo_110 = 
+notes_plat_sysinfo_115 =  From lscpu:
+notes_plat_sysinfo_120 =       Architecture:        riscv64
+notes_plat_sysinfo_125 =       Byte Order:          Little Endian
+notes_plat_sysinfo_130 =       CPU(s):              4
+notes_plat_sysinfo_135 =       On-line CPU(s) list: 0-3
+notes_plat_sysinfo_140 = 
+notes_plat_sysinfo_145 =  /proc/cpuinfo cache data
+notes_plat_sysinfo_150 =     cpu-cacheline : 64Bytes
+notes_plat_sysinfo_155 =     cpu-dcache : 64KB
+notes_plat_sysinfo_160 =     cpu-icache : 64KB
+notes_plat_sysinfo_165 =     cpu-l2cache : 1MB
+notes_plat_sysinfo_170 = 
+notes_plat_sysinfo_175 =  From numactl --hardware  WARNING: a numactl 'node' might or might not correspond to a
+notes_plat_sysinfo_180 =  physical chip.
+notes_plat_sysinfo_185 = 
+notes_plat_sysinfo_190 =  From /proc/meminfo
+notes_plat_sysinfo_195 =     MemTotal:       16116952 kB
+notes_plat_sysinfo_200 =     HugePages_Total:       0
+notes_plat_sysinfo_205 =     Hugepagesize:       2048 kB
+notes_plat_sysinfo_210 = 
+notes_plat_sysinfo_215 =  /usr/bin/lsb_release -d
+notes_plat_sysinfo_220 =     Debian GNU/Linux 12 (bookworm)
+notes_plat_sysinfo_225 = 
+notes_plat_sysinfo_230 =  From /etc/*release* /etc/*version*
+notes_plat_sysinfo_235 =     debian_version: 12.0
+notes_plat_sysinfo_240 =     os-release:
+notes_plat_sysinfo_245 =        PRETTY_NAME="Debian GNU/Linux 12 (bookworm)"
+notes_plat_sysinfo_250 =        NAME="Debian GNU/Linux"
+notes_plat_sysinfo_255 =        VERSION_ID="12"
+notes_plat_sysinfo_260 =        VERSION="12 (bookworm)"
+notes_plat_sysinfo_265 =        VERSION_CODENAME=bookworm
+notes_plat_sysinfo_270 =        ID=debian
+notes_plat_sysinfo_275 =        HOME_URL="https://www.debian.org/"
+notes_plat_sysinfo_280 =        SUPPORT_URL="https://www.debian.org/support"
+notes_plat_sysinfo_285 =     revyos-release:
+notes_plat_sysinfo_290 =        BUILD_ID=20231009_134626
+notes_plat_sysinfo_295 =        BUILD_DATE=20231009
+notes_plat_sysinfo_300 =        COMMIT_ID=f9867c522485046f1965a3101bd4545520803623
+notes_plat_sysinfo_305 =        RUNNER_ID=6457521686
+notes_plat_sysinfo_310 = 
+notes_plat_sysinfo_315 =  uname -a:
+notes_plat_sysinfo_320 =     Linux lpi4a 5.10.113+ \#4 SMP PREEMPT Fri Oct 20 06:59:14 UTC 2023 riscv64 GNU/Linux
+notes_plat_sysinfo_325 = 
+notes_plat_sysinfo_330 =  run-level 5 Nov 28 13:15
+notes_plat_sysinfo_335 = 
+notes_plat_sysinfo_340 =  SPEC is set to: /home/sipeed/spec2017
+notes_plat_sysinfo_345 =     Filesystem     Type  Size  Used Avail Use% Mounted on
+notes_plat_sysinfo_350 =     /dev/root      ext4  115G   12G   98G  11% /
+notes_plat_sysinfo_355 = 
+notes_plat_sysinfo_360 =  Additional information from dmidecode follows.  WARNING: Use caution when you interpret
+notes_plat_sysinfo_365 =  this section. The 'dmidecode' program reads system data which is "intended to allow
+notes_plat_sysinfo_370 =  hardware to be accurately determined", but the intent may not be met, as there are
+notes_plat_sysinfo_375 =  frequent changes to hardware, firmware, and the "DMTF SMBIOS" standard.
+notes_plat_sysinfo_380 = 
+notes_plat_sysinfo_385 =  (End of data from sysinfo program)
+notes_wrap_columns = 0
+notes_wrap_indent =   
+num              = 548
+obiwan           = 
+oldhash          = 
+os_exe_ext       = 
+output_format    = txt,html,cfg,pdf,csv
+output_root      = 
+outputdir        = output
+parallel_test    = 4
+parallel_test_submit = 0
+parallel_test_workloads = 
+path             = /home/sipeed/spec2017/benchspec/CPU/548.exchange2_r
+plain_train      = 1
+platform         = 
+power            = 0
+preENV_LD_LIBRARY_PATH = %{gcc_dir}/lib64/:%{gcc_dir}/lib/:/lib64
+preenv           = 0
+prefix           = 
+prepared_by      = sipeed  (is never output, only tags rawfile)
+ranks            = 1
+rawhash_bits     = 256
+rebuild          = 0
+reftime          = reftime
+reltol           = 
+reportable       = 0
+resultdir        = result
+review           = 0
+run              = all
+runcpu           = /home/sipeed/spec2017/bin/harness/runcpu --configfile llvm-test.cfg --size test --noreportable --nopower --runmode rate --tune base:peak --size test 548.exchange2_r --nopreenv --note-preenv --logfile /home/sipeed/spec2017/tmp/CPU2017.014/templogs/preenv.intrate.014.0 --lognum 014.0 --from_runcpu 2
+rundir           = run
+runmode          = rate
+safe_eval        = 1
+save_build_files = 
+section_specifier_fatal = 1
+setprocgroup     = 1
+setup_error      = 0
+sigint           = 2
+size             = test
+size_class       = test
+skipabstol       = 
+skipobiwan       = 
+skipreltol       = 
+skiptol          = 
+smarttune        = peak
+specdiff         = specdiff
+specrun          = specinvoke
+srcalt           = 
+srcdir           = src
+srcsource        = /home/sipeed/spec2017/benchspec/CPU/548.exchange2_r/src
+stagger          = 10
+strict_rundir_verify = 1
+sw_avail         = Nov-2023
+sw_base_ptrsize  = 64-bit
+sw_compiler001   = Debian clang version 17.0.0 (+rc4-1~exp5revyos1)
+sw_file          = ext4
+sw_os001         = Debian GNU/Linux 12 (bookworm)
+sw_os002         = 5.10.113+
+sw_other         = None
+sw_peak_ptrsize  = 64-bit
+sw_state         = Run level 5 (add definition here)
+sysinfo_hash_bits = 256
+sysinfo_program  = specperl /home/sipeed/spec2017/bin/sysinfo
+sysinfo_program_hash = sysinfo:SHA:32259ebd59f3e93740723202f27c44c82ee68e0f2e40cd2ca50cfd5519772397
+table            = 1
+teeout           = 0
+test_date        = Nov-2023
+test_sponsor     = PLCT
+tester           = PLCT
+threads          = 1
+top              = /home/sipeed/spec2017
+train_single_thread = 0
+train_with       = train
+tune             = peak
+uid              = 1001
+unbuffer         = 1
+uncertainty_exception = 5
+update           = 0
+update_url       = http://www.spec.org/auto/cpu2017/updates/
+use_submit_for_compare = 0
+use_submit_for_speed = 0
+username         = sipeed
+verbose          = 5
+verify_binaries  = 1
+version          = 0.905000
+version_url      = http://www.spec.org/auto/cpu2017/current_version
+voltage_range    = 
+worklist         = list
+OUTPUT_RMFILES   = s.txt
+  Compile for '548.exchange2_r' started at: 2023-11-29 13:00:52 (1701262852)
+Issuing make.clean command 'specmake --output-sync --jobs=4 clean'
+Start make.clean command: 2023-11-29 13:00:52 (1701262852.69042)
+rm -rf *.o  s.txt
+find . \( -name \*.o -o -name '*.fppized.f*' -o -name '*.i' -o -name '*.mod' \) -print | xargs rm -rf
+rm -rf exchange2_r
+rm -rf exchange2_r.exe
+rm -rf core
+Stop make.clean command: 2023-11-29 13:00:52 (1701262852.93702)
+Elapsed time for make.clean command: 00:00:00 (0.246594190597534)
+Issuing make command 'specmake --output-sync --jobs=4 build'
+Start make command: 2023-11-29 13:00:52 (1701262852.94057)
+/home/sipeed/spec2017/bin/specperl /home/sipeed/spec2017/bin/harness/specpp -DSPEC -DNDEBUG -DSPEC_AUTO_SUPPRESS_OPENMP -DSPEC_LP64 exchange2.F90 -o exchange2.fppized.f90
+/usr/bin/flang-new-17     -c -o exchange2.fppized.o -g -Ofast exchange2.fppized.f90
+/usr/bin/flang-new-17          -g -Ofast          exchange2.fppized.o                      -o exchange2_r  
+Stop make command: 2023-11-29 13:01:51 (1701262911.18506)
+Elapsed time for make command: 00:00:58 (58.2444889545441)
+Issuing options command 'specmake --output-sync --jobs=4 options'
+Start options command: 2023-11-29 13:01:51 (1701262911.18856)
+FPP: "specpp -DSPEC -DNDEBUG -DSPEC_AUTO_SUPPRESS_OPENMP -DSPEC_LP64 <source> -o <source>.fppized.f9x"
+P: CPUFLAGS="-DSPEC -DNDEBUG"
+P: BENCH_FLAGS="-DSPEC_AUTO_SUPPRESS_OPENMP"
+O: OPTIMIZE=""
+O: EXTRA_OPTIMIZE=""
+O: FPPOPTIMIZE=""
+O: EXTRA_FPPOPTIMIZE=""
+O: FOPTIMIZE=""
+O: EXTRA_FOPTIMIZE=""
+P: PORTABILITY=""
+P: EXTRA_PORTABILITY="-DSPEC_LP64"
+P: FPORTABILITY=""
+P: EXTRA_FPORTABILITY=""
+COMP: "/usr/bin/flang-new-17     -c -o options.o -g -Ofast <source>"
+C: FC="/usr/bin/flang-new-17    "
+C: FOBJOPT="-c -o options"
+P: CPUFLAGS="-DSPEC -DNDEBUG"
+P: BENCH_FLAGS="-DSPEC_AUTO_SUPPRESS_OPENMP"
+P: BENCH_FFLAGS=""
+O: OPTIMIZE="-g -Ofast"
+O: FOPTIMIZE=""
+P: PORTABILITY=""
+P: FPORTABILITY=""
+O: EXTRA_FFLAGS=""
+O: EXTRA_OPTIMIZE=""
+O: EXTRA_FOPTIMIZE=""
+P: EXTRA_PORTABILITY="-DSPEC_LP64"
+P: EXTRA_FPORTABILITY=""
+LINK: "/usr/bin/flang-new-17          -g -Ofast          <objects>            -o options  "
+C: LD="/usr/bin/flang-new-17    "
+O: OPTIMIZE="-g -Ofast"
+C: LDOUT="-o options"
+Stop options command: 2023-11-29 13:01:51 (1701262911.39826)
+Elapsed time for options command: 00:00:00 (0.20969295501709)
+Issuing compiler-version command 'specmake --output-sync --jobs=4 compiler-version'
+Start compiler-version command: 2023-11-29 13:01:51 (1701262911.40327)
+ FC_VERSION_OPTION:
+Debian flang-new version 17.0.0 (+rc4-1~exp5revyos1)
+Target: riscv64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /usr/lib/llvm-17/bin
+Stop compiler-version command: 2023-11-29 13:01:51 (1701262911.73719)
+Elapsed time for compiler-version command: 00:00:00 (0.333927154541016)
+  Compile for '548.exchange2_r' ended at: 2023-11-29 13:01:51 (1701262911)
+  Elapsed compile for '548.exchange2_r': 00:00:59 (59)
+FPP: "specpp -DSPEC -DNDEBUG -DSPEC_AUTO_SUPPRESS_OPENMP -DSPEC_LP64 <source> -o <source>.fppized.f9x"
+P: CPUFLAGS="-DSPEC -DNDEBUG"
+P: BENCH_FLAGS="-DSPEC_AUTO_SUPPRESS_OPENMP"
+O: OPTIMIZE=""
+O: EXTRA_OPTIMIZE=""
+O: FPPOPTIMIZE=""
+O: EXTRA_FPPOPTIMIZE=""
+O: FOPTIMIZE=""
+O: EXTRA_FOPTIMIZE=""
+P: PORTABILITY=""
+P: EXTRA_PORTABILITY="-DSPEC_LP64"
+P: FPORTABILITY=""
+P: EXTRA_FPORTABILITY=""
+COMP: "/usr/bin/flang-new-17     -c -o options.o -g -Ofast <source>"
+C: FC="/usr/bin/flang-new-17    "
+C: FOBJOPT="-c -o options"
+P: CPUFLAGS="-DSPEC -DNDEBUG"
+P: BENCH_FLAGS="-DSPEC_AUTO_SUPPRESS_OPENMP"
+P: BENCH_FFLAGS=""
+O: OPTIMIZE="-g -Ofast"
+O: FOPTIMIZE=""
+P: PORTABILITY=""
+P: FPORTABILITY=""
+O: EXTRA_FFLAGS=""
+O: EXTRA_OPTIMIZE=""
+O: EXTRA_FOPTIMIZE=""
+P: EXTRA_PORTABILITY="-DSPEC_LP64"
+P: EXTRA_FPORTABILITY=""
+LINK: "/usr/bin/flang-new-17          -g -Ofast          <objects>            -o options  "
+C: LD="/usr/bin/flang-new-17    "
+O: OPTIMIZE="-g -Ofast"
+C: LDOUT="-o options"
+ FC_VERSION_OPTION:
+Debian flang-new version 17.0.0 (+rc4-1~exp5revyos1)
+Target: riscv64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /usr/lib/llvm-17/bin
+
+Build successes for intrate: 548.exchange2_r(base), 548.exchange2_r(peak)
+Build errors for intrate: None
+
+Setting Up Run Directories
+  Setting up 548.exchange2_r test base clang17-riscv64-64 (4 copies): run_base_test_clang17-riscv64-64.0000-0003
+  Setting up 548.exchange2_r test peak clang17-riscv64-64 (4 copies): run_peak_test_clang17-riscv64-64.0000-0003
+-----------------------------------
+Running Benchmarks
+-----------------------------------
+  Running 548.exchange2_r test base clang17-riscv64-64 (4 copies) [2023-11-29 13:01:53]
+OpenMP environment variables removed: None
+OpenMP environment variables in effect:
+	OMP_NUM_THREADS	=> '1'
+	OMP_THREAD_LIMIT	=> '1'
+Pre-run environment changes:
+	'OMP_NUM_THREADS' added: (value now '1')
+	'OMP_THREAD_LIMIT' added: (value now '1')
+Commands to run (specinvoke command file):
+    -r
+    -N C
+    -C /home/sipeed/spec2017/benchspec/CPU/548.exchange2_r/run/run_base_test_clang17-riscv64-64.0000
+    -C /home/sipeed/spec2017/benchspec/CPU/548.exchange2_r/run/run_base_test_clang17-riscv64-64.0001
+    -C /home/sipeed/spec2017/benchspec/CPU/548.exchange2_r/run/run_base_test_clang17-riscv64-64.0002
+    -C /home/sipeed/spec2017/benchspec/CPU/548.exchange2_r/run/run_base_test_clang17-riscv64-64.0003
+    -o exchange2.txt -e exchange2.err ../run_base_test_clang17-riscv64-64.0000/exchange2_r_base.clang17-riscv64-64 0 > exchange2.txt 2>> exchange2.err (timed)
+Specinvoke: /home/sipeed/spec2017/bin/specinvoke -d /home/sipeed/spec2017/benchspec/CPU/548.exchange2_r/run/run_base_test_clang17-riscv64-64.0000 -f speccmds.cmd -q -e speccmds.err -o speccmds.stdout
+Issuing command '/home/sipeed/spec2017/bin/specinvoke -d /home/sipeed/spec2017/benchspec/CPU/548.exchange2_r/run/run_base_test_clang17-riscv64-64.0000 -f speccmds.cmd -q -e speccmds.err -o speccmds.stdout'
+Start command: 2023-11-29 13:01:53 (1701262913.35767)
+Stop command: 2023-11-29 13:02:32 (1701262952.51718)
+Elapsed time for command: 00:00:39 (39.1595089435577)
+Workload elapsed time (copy 3 workload 1) = 38.655784 seconds
+Workload elapsed time (copy 2 workload 1) = 38.729787 seconds
+Workload elapsed time (copy 0 workload 1) = 38.877595 seconds
+Workload elapsed time (copy 1 workload 1) = 38.96262 seconds
+Copy 0 of 548.exchange2_r (base test) run 1 finished at 2023-11-29 13:02:32.  Total elapsed time: 38.877595
+Copy 1 of 548.exchange2_r (base test) run 1 finished at 2023-11-29 13:02:32.  Total elapsed time: 38.96262
+Copy 2 of 548.exchange2_r (base test) run 1 finished at 2023-11-29 13:02:32.  Total elapsed time: 38.729787
+Copy 3 of 548.exchange2_r (base test) run 1 finished at 2023-11-29 13:02:32.  Total elapsed time: 38.655784
+OpenMP environment variables removed: None
+OpenMP environment variables in effect:
+	OMP_NUM_THREADS	=> '1'
+	OMP_THREAD_LIMIT	=> '1'
+Pre-run environment changes:
+	'OMP_NUM_THREADS' added: (value now '1')
+	'OMP_THREAD_LIMIT' added: (value now '1')
+comparing 's.txt' with 
+Specinvoke: /home/sipeed/spec2017/bin/specinvoke -d /home/sipeed/spec2017/benchspec/CPU/548.exchange2_r/run/run_base_test_clang17-riscv64-64.0000 -f compare.cmd -E -e compare.err -o compare.stdout
+Issuing command '/home/sipeed/spec2017/bin/specinvoke -d /home/sipeed/spec2017/benchspec/CPU/548.exchange2_r/run/run_base_test_clang17-riscv64-64.0000 -f compare.cmd -E -e compare.err -o compare.stdout'
+Start command: 2023-11-29 13:02:32 (1701262952.75006)
+Stop command: 2023-11-29 13:02:33 (1701262953.61729)
+Elapsed time for command: 00:00:00 (0.867234945297241)
+Benchmark Times:
+  Run Start:    2023-11-29 13:01:53 (1701262913)
+  Rate Start:   2023-11-29 13:01:53 (1701262913.37605)
+  Rate End:     2023-11-29 13:02:32 (1701262952.33898)
+  Run Stop:     2023-11-29 13:02:32 (1701262952)
+  Run Elapsed:  00:00:39 (39)
+  Run Reported: 00:00:38 (38 962934017 38.962934)
+ Success 548.exchange2_r base test ratio=-0.00, runtime=38.962934, copies=4, threads=1, power=0.00W, temp=0.00 degC, humidity=0.00%
+-----------------------------------
+  Running 548.exchange2_r test peak clang17-riscv64-64 (4 copies) [2023-11-29 13:02:33]
+OpenMP environment variables removed: None
+OpenMP environment variables in effect:
+	OMP_NUM_THREADS	=> '1'
+	OMP_THREAD_LIMIT	=> '1'
+Pre-run environment changes:
+	'OMP_NUM_THREADS' added: (value now '1')
+	'OMP_THREAD_LIMIT' added: (value now '1')
+Commands to run (specinvoke command file):
+    -r
+    -N C
+    -C /home/sipeed/spec2017/benchspec/CPU/548.exchange2_r/run/run_peak_test_clang17-riscv64-64.0000
+    -C /home/sipeed/spec2017/benchspec/CPU/548.exchange2_r/run/run_peak_test_clang17-riscv64-64.0001
+    -C /home/sipeed/spec2017/benchspec/CPU/548.exchange2_r/run/run_peak_test_clang17-riscv64-64.0002
+    -C /home/sipeed/spec2017/benchspec/CPU/548.exchange2_r/run/run_peak_test_clang17-riscv64-64.0003
+    -o exchange2.txt -e exchange2.err ../run_peak_test_clang17-riscv64-64.0000/exchange2_r_peak.clang17-riscv64-64 0 > exchange2.txt 2>> exchange2.err (timed)
+Specinvoke: /home/sipeed/spec2017/bin/specinvoke -d /home/sipeed/spec2017/benchspec/CPU/548.exchange2_r/run/run_peak_test_clang17-riscv64-64.0000 -f speccmds.cmd -q -e speccmds.err -o speccmds.stdout
+Issuing command '/home/sipeed/spec2017/bin/specinvoke -d /home/sipeed/spec2017/benchspec/CPU/548.exchange2_r/run/run_peak_test_clang17-riscv64-64.0000 -f speccmds.cmd -q -e speccmds.err -o speccmds.stdout'
+Start command: 2023-11-29 13:02:33 (1701262953.97496)
+Stop command: 2023-11-29 13:03:08 (1701262988.19238)
+Elapsed time for command: 00:00:34 (34.2174298763275)
+Workload elapsed time (copy 0 workload 1) = 33.790212 seconds
+Workload elapsed time (copy 2 workload 1) = 33.854658 seconds
+Workload elapsed time (copy 3 workload 1) = 33.891342 seconds
+Workload elapsed time (copy 1 workload 1) = 34.017076 seconds
+Copy 0 of 548.exchange2_r (peak test) run 1 finished at 2023-11-29 13:03:07.  Total elapsed time: 33.790212
+Copy 1 of 548.exchange2_r (peak test) run 1 finished at 2023-11-29 13:03:08.  Total elapsed time: 34.017076
+Copy 2 of 548.exchange2_r (peak test) run 1 finished at 2023-11-29 13:03:07.  Total elapsed time: 33.854658
+Copy 3 of 548.exchange2_r (peak test) run 1 finished at 2023-11-29 13:03:07.  Total elapsed time: 33.891342
+OpenMP environment variables removed: None
+OpenMP environment variables in effect:
+	OMP_NUM_THREADS	=> '1'
+	OMP_THREAD_LIMIT	=> '1'
+Pre-run environment changes:
+	'OMP_NUM_THREADS' added: (value now '1')
+	'OMP_THREAD_LIMIT' added: (value now '1')
+comparing 's.txt' with 
+Specinvoke: /home/sipeed/spec2017/bin/specinvoke -d /home/sipeed/spec2017/benchspec/CPU/548.exchange2_r/run/run_peak_test_clang17-riscv64-64.0000 -f compare.cmd -E -e compare.err -o compare.stdout
+Issuing command '/home/sipeed/spec2017/bin/specinvoke -d /home/sipeed/spec2017/benchspec/CPU/548.exchange2_r/run/run_peak_test_clang17-riscv64-64.0000 -f compare.cmd -E -e compare.err -o compare.stdout'
+Start command: 2023-11-29 13:03:08 (1701262988.43252)
+Stop command: 2023-11-29 13:03:09 (1701262989.30122)
+Elapsed time for command: 00:00:00 (0.868708848953247)
+Benchmark Times:
+  Run Start:    2023-11-29 13:02:33 (1701262953)
+  Rate Start:   2023-11-29 13:02:33 (1701262953.99434)
+  Rate End:     2023-11-29 13:03:08 (1701262988.01185)
+  Run Stop:     2023-11-29 13:03:08 (1701262988)
+  Run Elapsed:  00:00:35 (35)
+  Run Reported: 00:00:34 (34 17515897 34.017516)
+ Success 548.exchange2_r peak test ratio=-0.00, runtime=34.017516, copies=4, threads=1, power=0.00W, temp=0.00 degC, humidity=0.00%
+Success: 2x548.exchange2_r
+Producing Raw Reports
+ label: clang17-riscv64-64
+  workload: test
+   benchset: intspeed
+   benchset: intrate
+   metric: SPECrate2017_int_base, SPECrate2017_int_peak
+    format: raw -> /home/sipeed/spec2017/result/CPU2017.014.intrate.test.rsf
+Parsing flags for 548.exchange2_r base: done
+Parsing flags for 548.exchange2_r peak: done
+Doing flag reduction: done
+    format: flags -> /home/sipeed/spec2017/result/CPU2017.014.intrate.test.flags.html
+    format: cfg -> /home/sipeed/spec2017/result/CPU2017.014.intrate.test.cfg
+    format: CSV -> /home/sipeed/spec2017/result/CPU2017.014.intrate.test.csv
+    format: PDF -> /home/sipeed/spec2017/result/CPU2017.014.intrate.test.pdf
+    format: HTML -> /home/sipeed/spec2017/result/CPU2017.014.intrate.test.html
+    format: Text -> /home/sipeed/spec2017/result/CPU2017.014.intrate.test.txt
+   benchset: fpspeed
+   benchset: fprate
+runcpu finished at 2023-11-29 13:04:01; 251 total seconds elapsed
+Info: file_tail(282558): file '/home/sipeed/spec2017/tmp/CPU2017.014/templogs/preenv.intrate.014.0.debug' was removed and will no longer be followed.  No action is required.
+The log for this run is in /home/sipeed/spec2017/result/CPU2017.014.log
+
+runcpu finished at 2023-11-29 13:04:01; 255 total seconds elapsed
