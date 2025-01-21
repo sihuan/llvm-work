@@ -43,6 +43,7 @@ spec2017 没有提供 riscv 架构的二进制工具集，需自行编译，编�
    从以下链接下载最新版本的 `config.guess` 和 `config.sub`
    
    http://git.savannah.gnu.org/gitweb/?p=config.git;a=blob_plain;f=config.guess
+   
    http://git.savannah.gnu.org/gitweb/?p=config.git;a=blob_plain;f=config.sub
    
    替换以下位置的旧版本
@@ -57,7 +58,7 @@ spec2017 没有提供 riscv 架构的二进制工具集，需自行编译，编�
    $SPEC/tools/src/xz-5.2.2/build-aux/
    ```
 
-2. 编译 perl 时，可能会将 `gcc 10` 识别为 `gcc 1.x`
+3. 编译 perl 时，可能会将 `gcc 10` 识别为 `gcc 1.x`
    
    这是因为 `$SPEC/tools/src/perl-5.24.0/Configure` 和 `$SPEC/tools/src/perl-5.24.0/cflags.SH` 中使用 `1*` 匹配 gcc 版本号，需改为 `1.*`  
    使用以下 patch 来修复
@@ -116,7 +117,7 @@ spec2017 没有提供 riscv 架构的二进制工具集，需自行编译，编�
     # NOTE 1: the -std=c89 without -pedantic is a bit pointless.
    ```
 
-3. `$SPEC/tools/src/TimeDate-2.30/t/getdate.t` 测试失败
+4. `$SPEC/tools/src/TimeDate-2.30/t/getdate.t` 测试失败
 需要做以下修改
 ```diff
 --- getdate.t
