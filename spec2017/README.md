@@ -39,76 +39,82 @@ spec2017 没有提供 riscv 架构的二进制工具集，需自行编译，编�
 编译过程中会遇到一些问题如下：
 
 1. `config.guess` 和 `config.sub` 太过老旧，不能识别 riscv 架构
-从以下链接下载最新版本的 `config.guess` 和 `config.sub` 
-http://git.savannah.gnu.org/gitweb/?p=config.git;a=blob_plain;f=config.guess
-http://git.savannah.gnu.org/gitweb/?p=config.git;a=blob_plain;f=config.sub
-替换以下位置的旧版本
-```
-$SPEC/tools/src/specinvoke/
-$SPEC/tools/src/specsum/build-aux/
-$SPEC/tools/src/tar-1.28/build-aux/
-$SPEC/tools/src/make-4.2.1/config/
-$SPEC/tools/src/rxp-1.5.0/
-$SPEC/tools/src/expat-2.1.0/conftools/
-$SPEC/tools/src/xz-5.2.2/build-aux/
-```
 
-2. 编译 perl 时，可能会将 gcc 10 识别为，gcc 1.x
-`$SPEC/tools/src/perl-5.24.0/Configure` 和 `$SPEC/tools/src/perl-5.24.0/cflags.SH` 中使用 `1*` 匹配 gcc 版本号，改为 `1.*`
-使用 以下 patch 来修复
-```diff
---- Configure
-+++ Configure
-@@ -4686,7 +4686,7 @@ else
- fi
- $rm -f try try.*
- case "$gccversion" in
--1*) cpp=`./loc gcc-cpp $cpp $pth` ;;
-+1.*) cpp=`./loc gcc-cpp $cpp $pth` ;;
- esac
- case "$gccversion" in
- '') gccosandvers='' ;;
-@@ -5438,7 +5438,7 @@ fi
- case "$hint" in
- default|recommended)
-        case "$gccversion" in
--       1*) dflt="$dflt -fpcc-struct-return" ;;
-+       1.*) dflt="$dflt -fpcc-struct-return" ;;
-        esac
-        case "$optimize:$DEBUGGING" in
-        *-g*:old) dflt="$dflt -DDEBUGGING";;
-@@ -5453,7 +5453,7 @@ default|recommended)
-                ;;
-        esac
-        case "$gccversion" in
--       1*) ;;
-+       1.*) ;;
-        2.[0-8]*) ;;
-        ?*)     set strict-aliasing -fno-strict-aliasing
-                eval $checkccflag
-@@ -5571,7 +5571,7 @@ case "$cppflags" in
-     ;;
- esac
- case "$gccversion" in
--1*) cppflags="$cppflags -D__GNUC__"
-+1.*) cppflags="$cppflags -D__GNUC__"
- esac
- case "$mips_type" in
- '');;
-diff --git cflags.SH cflags.SH
-index a50044e..fe1079a 100755
---- cflags.SH
-+++ cflags.SH
-@@ -164,7 +164,7 @@ esac
- 
- case "$gccversion" in
- '') ;;
--[12]*) ;; # gcc versions 1 (gasp!) and 2 are not good for this.
-+[12].*) ;; # gcc versions 1 (gasp!) and 2 are not good for this.
- Intel*) ;; # # Is that you, Intel C++?
- #
- # NOTE 1: the -std=c89 without -pedantic is a bit pointless.
-```
+   从以下链接下载最新版本的 `config.guess` 和 `config.sub`
+   
+   http://git.savannah.gnu.org/gitweb/?p=config.git;a=blob_plain;f=config.guess
+   http://git.savannah.gnu.org/gitweb/?p=config.git;a=blob_plain;f=config.sub
+   
+   替换以下位置的旧版本
+   
+   ```
+   $SPEC/tools/src/specinvoke/
+   $SPEC/tools/src/specsum/build-aux/
+   $SPEC/tools/src/tar-1.28/build-aux/
+   $SPEC/tools/src/make-4.2.1/config/
+   $SPEC/tools/src/rxp-1.5.0/
+   $SPEC/tools/src/expat-2.1.0/conftools/
+   $SPEC/tools/src/xz-5.2.2/build-aux/
+   ```
+
+2. 编译 perl 时，可能会将 `gcc 10` 识别为 `gcc 1.x`
+   
+   这是因为 `$SPEC/tools/src/perl-5.24.0/Configure` 和 `$SPEC/tools/src/perl-5.24.0/cflags.SH` 中使用 `1*` 匹配 gcc 版本号，需改为 `1.*`  
+   使用以下 patch 来修复
+   
+   ```diff
+   --- Configure
+   +++ Configure
+   @@ -4686,7 +4686,7 @@ else
+    fi
+    $rm -f try try.*
+    case "$gccversion" in
+   -1*) cpp=`./loc gcc-cpp $cpp $pth` ;;
+   +1.*) cpp=`./loc gcc-cpp $cpp $pth` ;;
+    esac
+    case "$gccversion" in
+    '') gccosandvers='' ;;
+   @@ -5438,7 +5438,7 @@ fi
+    case "$hint" in
+    default|recommended)
+           case "$gccversion" in
+   -       1*) dflt="$dflt -fpcc-struct-return" ;;
+   +       1.*) dflt="$dflt -fpcc-struct-return" ;;
+           esac
+           case "$optimize:$DEBUGGING" in
+           *-g*:old) dflt="$dflt -DDEBUGGING";;
+   @@ -5453,7 +5453,7 @@ default|recommended)
+                   ;;
+           esac
+           case "$gccversion" in
+   -       1*) ;;
+   +       1.*) ;;
+           2.[0-8]*) ;;
+           ?*)     set strict-aliasing -fno-strict-aliasing
+                   eval $checkccflag
+   @@ -5571,7 +5571,7 @@ case "$cppflags" in
+        ;;
+    esac
+    case "$gccversion" in
+   -1*) cppflags="$cppflags -D__GNUC__"
+   +1.*) cppflags="$cppflags -D__GNUC__"
+    esac
+    case "$mips_type" in
+    '');;
+   diff --git cflags.SH cflags.SH
+   index a50044e..fe1079a 100755
+   --- cflags.SH
+   +++ cflags.SH
+   @@ -164,7 +164,7 @@ esac
+    
+    case "$gccversion" in
+    '') ;;
+   -[12]*) ;; # gcc versions 1 (gasp!) and 2 are not good for this.
+   +[12].*) ;; # gcc versions 1 (gasp!) and 2 are not good for this.
+    Intel*) ;; # # Is that you, Intel C++?
+    #
+    # NOTE 1: the -std=c89 without -pedantic is a bit pointless.
+   ```
 
 3. `$SPEC/tools/src/TimeDate-2.30/t/getdate.t` 测试失败
 需要做以下修改
@@ -123,7 +129,7 @@ index a50044e..fe1079a 100755
 +my $offset = Time::Local::timegm(0,0,0,1,0,1970);
  
  @data = split(/\n/, $data);
-```
+   ```
 
 4. 编译并打包
 使用 `$SPEC/tools/src/buildtools` 脚本编译
